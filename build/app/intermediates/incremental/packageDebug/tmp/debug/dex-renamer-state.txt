@@ -1,0 +1,13 @@
+#Sat Nov 09 11:26:46 IST 2024
+base.0=/Users/nitishkumar/Downloads/hostel_management_app/build/app/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/nitishkumar/Downloads/hostel_management_app/build/app/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/nitishkumar/Downloads/hostel_management_app/build/app/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.3=/Users/nitishkumar/Downloads/hostel_management_app/build/app/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=1/classes.dex
+path.3=7/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
