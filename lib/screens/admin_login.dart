@@ -176,7 +176,7 @@ class _AdminLoginPageState extends State<AdminLoginPage>
   void _navigateToHomeScreen() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => HomeScreen()),
+      MaterialPageRoute(builder: (context) => const HomeScreen()),
     );
   }
 

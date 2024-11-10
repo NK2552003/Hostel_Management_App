@@ -41,7 +41,7 @@ class LoginPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => HostlerLoginPage()),
+                            builder: (context) => const HostlerLoginPage()),
                       );
                     }),
                     Row(
@@ -63,7 +63,7 @@ class LoginPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => WardenLoginPage()),
+                            builder: (context) => const WardenLoginPage()),
                       );
                     }),
                     const SizedBox(height: 20),
