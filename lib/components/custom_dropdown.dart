@@ -21,6 +21,7 @@ class CustomDropdown<T> extends StatelessWidget {
     return DropdownButtonFormField<T>(
       decoration: InputDecoration(
         labelText: labelText,
+        labelStyle: TextStyle(color: Colors.green.shade900, fontSize: 16),
         border: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
@@ -30,11 +31,17 @@ class CustomDropdown<T> extends StatelessWidget {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: const BorderRadius.all(Radius.circular(12)),
-          borderSide: BorderSide(color: Colors.green.shade900, width: 1),
+          borderSide: BorderSide(color: Colors.green.shade900, width: 1.5),
         ),
       ),
       value: selectedValue,
-      items: items,
+      dropdownColor: Colors.green.shade50, // Set dropdown background color
+      items: items.map((DropdownMenuItem<T> item) {
+        return DropdownMenuItem<T>(
+          value: item.value,
+          child: item.child,
+        );
+      }).toList(),
       onChanged: onChanged,
       validator: validator,
     );

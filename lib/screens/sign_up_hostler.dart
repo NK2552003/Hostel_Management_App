@@ -71,7 +71,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 Center(
                   child: ProfilePictureUploader(),
                 ),
-                const SizedBox(height: 20),
                 const CustomText(),
                 const SizedBox(height: 20),
                 CustomTextField(
