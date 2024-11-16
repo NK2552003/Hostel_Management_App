@@ -54,7 +54,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
-              fontSize: 20,
+              fontSize: 22,
             ),
           ),
           centerTitle: true,
