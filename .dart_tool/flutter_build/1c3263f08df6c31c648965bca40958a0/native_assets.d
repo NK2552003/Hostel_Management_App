@@ -1,0 +1,1 @@
+ /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/.dart_tool/flutter_build/1c3263f08df6c31c648965bca40958a0/native_assets.yaml: 

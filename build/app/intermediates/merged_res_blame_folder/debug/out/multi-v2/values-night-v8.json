@@ -4,7 +4,7 @@
             "outputFile": "com.example.hostel_management_app-mergeDebugResources-24:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

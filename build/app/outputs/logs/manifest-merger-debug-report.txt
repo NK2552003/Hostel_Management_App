@@ -1,229 +1,288 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:2:5-34:19
-INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
-MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
-MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
-MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/53f114d110e356c36b5f50ab357f361f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/53f114d110e356c36b5f50ab357f361f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/ee01e2b20f52029a052c42ac95f9e8b2/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/ee01e2b20f52029a052c42ac95f9e8b2/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:7:5-39:19
+INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
+MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-32:19
+MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-32:19
+MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ed7e6c49deae7b19fd8e3465a2656e21/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ed7e6c49deae7b19fd8e3465a2656e21/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:1:1-46:12
-MERGED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:1:1-46:12
-INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/transforms-3/a49cd171355a6a39687e69f028c8bcbc/transformed/fragment-1.7.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:17:1-31:12
-MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/bf78d940cc78ca45c77421e3af64376e/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:17:1-21:12
-MERGED from [androidx.activity:activity:1.8.1] /Users/nitishkumar/.gradle/caches/transforms-3/3e4063b07db37bd08626b21245b0f82d/transformed/jetified-activity-1.8.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/2b9c9404689a5c622c078d5da9ff626f/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/878dadbdc8c0f130b446b0870752f824/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/4befdc7f9fed1e5c6647eae72672d219/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/9c28b5c7a2d23237247570dbf8382af1/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/52dfd6d7c21c1e36dbdf0d304093d642/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/9ec76326f098fb11057ae8a1fda52a48/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/ca2eed4266fd24517e583e6618aa3924/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/58accd456bc756075136cc5a7dae18d3/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/86808e134507e15e9d79206184913f8b/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/c8996eb6ce8efabee1883fe1486006c9/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/nitishkumar/.gradle/caches/transforms-3/010887bb3359843376c02ecf4bf2ef43/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/nitishkumar/.gradle/caches/transforms-3/6707c561045b071954f9f1d8398a2530/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/53f114d110e356c36b5f50ab357f361f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/fee79d0d8ef3af5dbc14ef6d22d028cf/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/08235bf0a8760a790ea7b8b4eab82236/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/ee01e2b20f52029a052c42ac95f9e8b2/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/de4e1f54747892e0930cd2e3ecf5513e/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/6dde453803d512b3f23cc981e264e9e0/transformed/jetified-core-1.0.0/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:1:1-51:12
+MERGED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:1:1-51:12
+INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-34:12
+MERGED from [:flutter_plugin_android_lifecycle] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/3d8a751b52c207999b947b3a82e34f2c/transformed/fragment-1.7.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.2] /Users/nitishkumar/.gradle/caches/8.9/transforms/b622c961a4329e7921d03e26baca63f9/transformed/jetified-activity-1.9.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0eab0f3b719e2326b07fe52828ae50b/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:17:1-21:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/d0da6be5f14f16e41c085cf681930d9d/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0e0d604ea92f65e5468e09970024ccf/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c4f5bbd0cb71cfa24d8fb4d881f3b38/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/e7b57a7b694bf366108c032615326e92/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/23a13f3ed8df3a1d5bfde4a55e8b6a66/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2eba460b4d5b438312b91a2806900212/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/481c1cacd48bed126ba602b110f33178/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/0839a1890dc0ac3f40342da9333099ba/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/748c8cfd3fa79a00271133a6c7419665/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c1ad9d790cc7278ce6d38e073c70bbc6/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/fec719805ad765f8507aff45d5251f39/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/nitishkumar/.gradle/caches/8.9/transforms/86345d2c8b9f0a2997843938695b0b3a/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/a118eb5ce69f33e9af889ef12928d67f/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ec0446cc6bc92d9bcd99bfe0a331d31a/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ed7e6c49deae7b19fd8e3465a2656e21/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1269c1fa696d5725faa636c9fc55f8e1/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/f1c5e152eb5311187d29732726d7a153/transformed/jetified-core-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1f496d2d99c7e1c5afce3a1d82f61743/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:1:11-69
-queries
-ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:40:5-45:15
-intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:41:9-44:18
-action#android.intent.action.PROCESS_TEXT
-ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:42:13-72
-	android:name
-		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:42:21-70
-data
-ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:43:13-50
-	android:mimeType
-		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:43:19-48
+		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml:6:5-66
+ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:3:5-66
+MERGED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:3:5-66
+MERGED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:3:5-66
 	android:name
-		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:3:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:4:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:5:22-78
+queries
+ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:45:5-50:15
+intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
+ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:46:9-49:18
+action#android.intent.action.PROCESS_TEXT
+ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:47:13-72
+	android:name
+		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:47:21-70
+data
+ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:48:13-50
+	android:mimeType
+		ADDED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:48:19-48
 uses-sdk
-INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
-MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/transforms-3/a49cd171355a6a39687e69f028c8bcbc/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/transforms-3/a49cd171355a6a39687e69f028c8bcbc/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/bf78d940cc78ca45c77421e3af64376e/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
-MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/bf78d940cc78ca45c77421e3af64376e/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
-MERGED from [androidx.activity:activity:1.8.1] /Users/nitishkumar/.gradle/caches/transforms-3/3e4063b07db37bd08626b21245b0f82d/transformed/jetified-activity-1.8.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.1] /Users/nitishkumar/.gradle/caches/transforms-3/3e4063b07db37bd08626b21245b0f82d/transformed/jetified-activity-1.8.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/2b9c9404689a5c622c078d5da9ff626f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/2b9c9404689a5c622c078d5da9ff626f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/878dadbdc8c0f130b446b0870752f824/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/878dadbdc8c0f130b446b0870752f824/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/4befdc7f9fed1e5c6647eae72672d219/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/4befdc7f9fed1e5c6647eae72672d219/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/9c28b5c7a2d23237247570dbf8382af1/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/9c28b5c7a2d23237247570dbf8382af1/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/52dfd6d7c21c1e36dbdf0d304093d642/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/52dfd6d7c21c1e36dbdf0d304093d642/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/9ec76326f098fb11057ae8a1fda52a48/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/9ec76326f098fb11057ae8a1fda52a48/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/ca2eed4266fd24517e583e6618aa3924/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/ca2eed4266fd24517e583e6618aa3924/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/58accd456bc756075136cc5a7dae18d3/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/58accd456bc756075136cc5a7dae18d3/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/86808e134507e15e9d79206184913f8b/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/86808e134507e15e9d79206184913f8b/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/c8996eb6ce8efabee1883fe1486006c9/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/c8996eb6ce8efabee1883fe1486006c9/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/nitishkumar/.gradle/caches/transforms-3/010887bb3359843376c02ecf4bf2ef43/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/nitishkumar/.gradle/caches/transforms-3/010887bb3359843376c02ecf4bf2ef43/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/nitishkumar/.gradle/caches/transforms-3/6707c561045b071954f9f1d8398a2530/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/nitishkumar/.gradle/caches/transforms-3/6707c561045b071954f9f1d8398a2530/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/53f114d110e356c36b5f50ab357f361f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/53f114d110e356c36b5f50ab357f361f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/fee79d0d8ef3af5dbc14ef6d22d028cf/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/fee79d0d8ef3af5dbc14ef6d22d028cf/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/08235bf0a8760a790ea7b8b4eab82236/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/08235bf0a8760a790ea7b8b4eab82236/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/ee01e2b20f52029a052c42ac95f9e8b2/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/ee01e2b20f52029a052c42ac95f9e8b2/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/de4e1f54747892e0930cd2e3ecf5513e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/de4e1f54747892e0930cd2e3ecf5513e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/6dde453803d512b3f23cc981e264e9e0/transformed/jetified-core-1.0.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/nitishkumar/.gradle/caches/transforms-3/6dde453803d512b3f23cc981e264e9e0/transformed/jetified-core-1.0.0/AndroidManifest.xml:5:5-44
+INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
+MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
+MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/3d8a751b52c207999b947b3a82e34f2c/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/3d8a751b52c207999b947b3a82e34f2c/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.2] /Users/nitishkumar/.gradle/caches/8.9/transforms/b622c961a4329e7921d03e26baca63f9/transformed/jetified-activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.2] /Users/nitishkumar/.gradle/caches/8.9/transforms/b622c961a4329e7921d03e26baca63f9/transformed/jetified-activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0eab0f3b719e2326b07fe52828ae50b/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
+MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0eab0f3b719e2326b07fe52828ae50b/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/d0da6be5f14f16e41c085cf681930d9d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/d0da6be5f14f16e41c085cf681930d9d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0e0d604ea92f65e5468e09970024ccf/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0e0d604ea92f65e5468e09970024ccf/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c4f5bbd0cb71cfa24d8fb4d881f3b38/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c4f5bbd0cb71cfa24d8fb4d881f3b38/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/e7b57a7b694bf366108c032615326e92/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/e7b57a7b694bf366108c032615326e92/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/23a13f3ed8df3a1d5bfde4a55e8b6a66/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/23a13f3ed8df3a1d5bfde4a55e8b6a66/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2eba460b4d5b438312b91a2806900212/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2eba460b4d5b438312b91a2806900212/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/481c1cacd48bed126ba602b110f33178/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/481c1cacd48bed126ba602b110f33178/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/0839a1890dc0ac3f40342da9333099ba/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/0839a1890dc0ac3f40342da9333099ba/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/748c8cfd3fa79a00271133a6c7419665/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/748c8cfd3fa79a00271133a6c7419665/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c1ad9d790cc7278ce6d38e073c70bbc6/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c1ad9d790cc7278ce6d38e073c70bbc6/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/fec719805ad765f8507aff45d5251f39/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/fec719805ad765f8507aff45d5251f39/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/nitishkumar/.gradle/caches/8.9/transforms/86345d2c8b9f0a2997843938695b0b3a/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/nitishkumar/.gradle/caches/8.9/transforms/86345d2c8b9f0a2997843938695b0b3a/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/a118eb5ce69f33e9af889ef12928d67f/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/a118eb5ce69f33e9af889ef12928d67f/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ec0446cc6bc92d9bcd99bfe0a331d31a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ec0446cc6bc92d9bcd99bfe0a331d31a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ed7e6c49deae7b19fd8e3465a2656e21/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ed7e6c49deae7b19fd8e3465a2656e21/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1269c1fa696d5725faa636c9fc55f8e1/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1269c1fa696d5725faa636c9fc55f8e1/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/f1c5e152eb5311187d29732726d7a153/transformed/jetified-core-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/f1c5e152eb5311187d29732726d7a153/transformed/jetified-core-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1f496d2d99c7e1c5afce3a1d82f61743/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1f496d2d99c7e1c5afce3a1d82f61743/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
-		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml
-uses-library#androidx.window.extensions
-ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
-	android:required
-		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
-	android:name
-		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
-uses-library#androidx.window.sidecar
-ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
-	android:required
-		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
-	android:name
-		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
-	android:name
-		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-permission#com.example.hostel_management_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
-	android:name
-		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-	android:name
-		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
-uses-permission#com.example.hostel_management_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-	android:name
-		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
-provider#androidx.startup.InitializationProvider
-ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/53f114d110e356c36b5f50ab357f361f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/transforms-3/53f114d110e356c36b5f50ab357f361f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-	tools:node
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:28:13-31
+		INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:9-17:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-47
 	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
-meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:75
+	android:resource
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-72
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+service#com.google.android.gms.metadata.ModuleDependencies
+ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-31:19
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-36
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+	tools:ignore
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-40
+	android:name
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-78
+intent-filter#action:name:com.google.android.gms.metadata.MODULE_DEPENDENCIES
+ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:29
+action#com.google.android.gms.metadata.MODULE_DEPENDENCIES
+ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-94
+	android:name
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-91
+meta-data#photopicker_activity:0:required
+ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-30:36
+	android:value
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-33
+	android:name
+		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-63
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.example.hostel_management_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.example.hostel_management_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

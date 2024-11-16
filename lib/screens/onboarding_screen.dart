@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:hostel_management_app/consts/onboarding_items.dart';
 import 'package:hostel_management_app/screens/login_page.dart';
+import 'package:hostel_management_app/screens/sign_up_hostler.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -137,7 +138,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                     child: ElevatedButton(
                       onPressed: () {
-                        // Handle register action
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignUpScreen()),
+                        );
                       },
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 16),

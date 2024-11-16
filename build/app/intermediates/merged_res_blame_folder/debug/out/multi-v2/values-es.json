@@ -4,7 +4,7 @@
             "outputFile": "com.example.hostel_management_app-mergeDebugResources-24:/values-es/values-es.xml",
             "map": [
                 {
-                    "source": "/Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/res/values-es/values-es.xml",
+                    "source": "/Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

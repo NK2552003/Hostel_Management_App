@@ -13,155 +13,201 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml:6:5-66
-15-->/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/debug/AndroidManifest.xml:6:22-64
-16    <!--
-17     Required to query activities that can process text, see:
-18         https://developer.android.com/training/package-visibility and
-19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
-20
-21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
-22    -->
-23    <queries>
-23-->/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:40:5-45:15
-24        <intent>
-24-->/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:41:9-44:18
-25            <action android:name="android.intent.action.PROCESS_TEXT" />
-25-->/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:42:13-72
-25-->/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:42:21-70
-26
-27            <data android:mimeType="text/plain" />
-27-->/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:43:13-50
-27-->/Users/nitishkumar/Downloads/hostel_management_app/android/app/src/main/AndroidManifest.xml:43:19-48
-28        </intent>
-29    </queries>
-30
-31    <permission
-31-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-32        android:name="com.example.hostel_management_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-32-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-33        android:protectionLevel="signature" />
-33-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
-34
-35    <uses-permission android:name="com.example.hostel_management_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-35-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-35-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+15-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:3:5-66
+15-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:3:22-64
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:4:5-79
+16-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:4:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:5:5-80
+17-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:5:22-78
+18    <!--
+19 Required to query activities that can process text, see:
+20         https://developer.android.com/training/package-visibility and
+21         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+22
+23         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+24    -->
+25    <queries>
+25-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:45:5-50:15
+26        <intent>
+26-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:46:9-49:18
+27            <action android:name="android.intent.action.PROCESS_TEXT" />
+27-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:47:13-72
+27-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:47:21-70
+28
+29            <data android:mimeType="text/plain" />
+29-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:48:13-50
+29-->/Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/main/AndroidManifest.xml:48:19-48
+30        </intent>
+31    </queries>
+32
+33    <permission
+33-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+34        android:name="com.example.hostel_management_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 36
-37    <application
-38        android:name="android.app.Application"
-39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-40        android:debuggable="true"
-41        android:enableOnBackInvokedCallback="true"
-42        android:extractNativeLibs="true"
-43        android:icon="@mipmap/ic_launcher"
-44        android:label="hostel_management_app" >
-45        <activity
-46            android:name="com.example.hostel_management_app.MainActivity"
-47            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-48            android:exported="true"
-49            android:hardwareAccelerated="true"
-50            android:launchMode="singleTop"
-51            android:taskAffinity=""
-52            android:theme="@style/LaunchTheme"
-53            android:windowSoftInputMode="adjustResize" >
-54
-55            <!--
-56                 Specifies an Android theme to apply to this Activity as soon as
-57                 the Android process has started. This theme is visible to the user
-58                 while the Flutter UI initializes. After that, this theme continues
-59                 to determine the Window background behind the Flutter UI.
-60            -->
-61            <meta-data
-62                android:name="io.flutter.embedding.android.NormalTheme"
-63                android:resource="@style/NormalTheme" />
-64
-65            <intent-filter>
-66                <action android:name="android.intent.action.MAIN" />
-67
-68                <category android:name="android.intent.category.LAUNCHER" />
-69            </intent-filter>
-70        </activity>
-71        <!--
-72             Don't delete the meta-data below.
-73             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-74        -->
-75        <meta-data
-76            android:name="flutterEmbedding"
-77            android:value="2" />
-78
-79        <uses-library
-79-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
-80            android:name="androidx.window.extensions"
-80-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
-81            android:required="false" />
-81-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
-82        <uses-library
-82-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
-83            android:name="androidx.window.sidecar"
-83-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
-84            android:required="false" />
-84-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
-85
-86        <provider
-86-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-87            android:name="androidx.startup.InitializationProvider"
-87-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
-88            android:authorities="com.example.hostel_management_app.androidx-startup"
-88-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
-89            android:exported="false" >
-89-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
-90            <meta-data
-90-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-91                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-91-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-92                android:value="androidx.startup" />
-92-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-93            <meta-data
-93-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-94                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-94-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-95                android:value="androidx.startup" />
-95-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-96        </provider>
+37    <uses-permission android:name="com.example.hostel_management_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+37-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+38
+39    <application
+40        android:name="android.app.Application"
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+42        android:debuggable="true"
+43        android:enableOnBackInvokedCallback="true"
+44        android:extractNativeLibs="true"
+45        android:icon="@mipmap/ic_launcher"
+46        android:label="hostel_management_app" >
+47        <activity
+48            android:name="com.example.hostel_management_app.MainActivity"
+49            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+50            android:exported="true"
+51            android:hardwareAccelerated="true"
+52            android:launchMode="singleTop"
+53            android:taskAffinity=""
+54            android:theme="@style/LaunchTheme"
+55            android:windowSoftInputMode="adjustResize" >
+56
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+64                android:name="io.flutter.embedding.android.NormalTheme"
+65                android:resource="@style/NormalTheme" />
+66
+67            <intent-filter>
+68                <action android:name="android.intent.action.MAIN" />
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+78            android:name="flutterEmbedding"
+79            android:value="2" />
+80
+81        <provider
+81-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:9-17:20
+82            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+82-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-82
+83            android:authorities="com.example.hostel_management_app.flutter.image_provider"
+83-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+84            android:exported="false"
+84-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+85            android:grantUriPermissions="true" >
+85-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-47
+86            <meta-data
+86-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:75
+87                android:name="android.support.FILE_PROVIDER_PATHS"
+87-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+88                android:resource="@xml/flutter_image_picker_file_paths" />
+88-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-72
+89        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+90        <service
+90-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-31:19
+91            android:name="com.google.android.gms.metadata.ModuleDependencies"
+91-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-78
+92            android:enabled="false"
+92-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-36
+93            android:exported="false" >
+93-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+94            <intent-filter>
+94-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:29
+95                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+95-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-94
+95-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-91
+96            </intent-filter>
 97
-98        <receiver
-98-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-99            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-99-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-100            android:directBootAware="false"
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-101            android:enabled="true"
-101-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-102            android:exported="true"
-102-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-103            android:permission="android.permission.DUMP" >
-103-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-104            <intent-filter>
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-105                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-106            </intent-filter>
-107            <intent-filter>
-107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-108                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-108-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-108-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-109            </intent-filter>
-110            <intent-filter>
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-111                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-112            </intent-filter>
-113            <intent-filter>
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-114                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-114-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-114-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-115            </intent-filter>
-116        </receiver>
-117    </application>
-118
-119</manifest>
+98            <meta-data
+98-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-30:36
+99                android:name="photopicker_activity:0:required"
+99-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-63
+100                android:value="" />
+100-->[:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-33
+101        </service>
+102
+103        <uses-library
+103-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+104            android:name="androidx.window.extensions"
+104-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+105            android:required="false" />
+105-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+106        <uses-library
+106-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+107            android:name="androidx.window.sidecar"
+107-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+108            android:required="false" />
+108-->[androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+109
+110        <provider
+110-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+111            android:name="androidx.startup.InitializationProvider"
+111-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+112            android:authorities="com.example.hostel_management_app.androidx-startup"
+112-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+113            android:exported="false" >
+113-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+114            <meta-data
+114-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+115                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+115-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+116                android:value="androidx.startup" />
+116-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+117            <meta-data
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+118                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+119                android:value="androidx.startup" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+120        </provider>
+121
+122        <receiver
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+123            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+124            android:directBootAware="false"
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+125            android:enabled="true"
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+126            android:exported="true"
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+127            android:permission="android.permission.DUMP" >
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+129                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+130            </intent-filter>
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+132                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+133            </intent-filter>
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+135                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+136            </intent-filter>
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+138                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+139            </intent-filter>
+140        </receiver>
+141    </application>
+142
+143</manifest>
