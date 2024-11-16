@@ -3,6 +3,7 @@ import 'package:hostel_management_app/components/custom_text.dart';
 import 'package:hostel_management_app/components/google_signin.dart';
 import 'package:hostel_management_app/screens/admin_login.dart';
 import 'package:hostel_management_app/screens/hostler_login.dart';
+import 'package:hostel_management_app/screens/sign_up_hostler.dart';
 import 'package:hostel_management_app/screens/warden_login.dart';
 
 class LoginPage extends StatelessWidget {
@@ -48,7 +49,13 @@ class LoginPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const SignUpScreen()),
+                            );
+                          },
                           child: Text(
                             "Not Registered?",
                             style: TextStyle(color: Colors.green.shade900),

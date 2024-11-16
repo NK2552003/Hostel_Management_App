@@ -26,11 +26,11 @@ class CustomDropdown<T> extends StatelessWidget {
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: const BorderRadius.all(Radius.circular(12)),
-          borderSide: BorderSide(color: Colors.green.shade900, width: 2),
+          borderSide: BorderSide(color: Colors.green.shade900, width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: const BorderRadius.all(Radius.circular(12)),
-          borderSide: BorderSide(color: Colors.green.shade900, width: 2),
+          borderSide: BorderSide(color: Colors.green.shade900, width: 1),
         ),
       ),
       value: selectedValue,
