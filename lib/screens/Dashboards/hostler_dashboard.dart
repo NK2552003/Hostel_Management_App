@@ -24,6 +24,7 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.green.shade900,
         elevation: 4,
@@ -80,20 +81,6 @@ class DashboardScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             QuickAccess(),
-            // QuickAccess(),
-            // Expanded(
-            //   child: Center(
-            //     child: Text(
-            //       'Remaining Part here',
-            //       style: TextStyle(
-            //         fontSize: 20,
-            //         fontWeight: FontWeight.w500,
-            //         color: Colors.grey.shade700,
-            //       ),
-            //       textAlign: TextAlign.center,
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),
@@ -105,20 +92,20 @@ class DashboardScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.green.shade900,
               ),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Center(
-                    child: const CircleAvatar(
+                    child: CircleAvatar(
                       radius: 40,
                       backgroundImage:
                           NetworkImage('https://via.placeholder.com/150'),
                     ),
                   ),
-                  const SizedBox(height: 8),
+                  SizedBox(height: 8),
                   Center(
-                    child: const Text(
+                    child: Text(
                       'Nitish Kumar',
                       style: TextStyle(
                         color: Colors.white,

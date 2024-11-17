@@ -100,41 +100,31 @@ class _QuickAccessState extends State<QuickAccess> {
               final item = buttonData[index];
               return GestureDetector(
                 onTap: item['onTap'], // Trigger assigned action
-                child: Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.green.shade900, // Border color
-                      width: 1, // Border width
-                    ),
-                    borderRadius:
-                        BorderRadius.circular(15), // Match Card's borderRadius
+                child: Card(
+                  color: Colors.green.shade50,
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Card(
-                    color: Colors.green.shade50,
-                    elevation: 4,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          item['icon'],
-                          size: 40,
-                          color: Colors.green.shade900,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        item['icon'],
+                        size: 40,
+                        color: Colors.green.shade900,
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        item['label'],
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black87,
                         ),
-                        const SizedBox(height: 10),
-                        Text(
-                          item['label'],
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.black87,
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
               );
