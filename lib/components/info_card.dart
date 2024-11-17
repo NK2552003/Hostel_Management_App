@@ -57,7 +57,7 @@ class InfoCard extends StatelessWidget {
                   ),
                   child: CircleAvatar(
                     radius: 60,
-                    backgroundImage: NetworkImage(avatarUrl),
+                    backgroundImage: AssetImage(avatarUrl),
                     backgroundColor:
                         Colors.grey.shade200, // Fallback background
                   ),

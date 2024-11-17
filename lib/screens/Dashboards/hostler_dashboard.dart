@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hostel_management_app/components/custom_drawer.dart';
+import 'package:hostel_management_app/components/event_list.dart';
 import 'package:hostel_management_app/components/info_card.dart';
 import 'package:hostel_management_app/components/quick_access.dart';
 
@@ -64,99 +66,31 @@ class DashboardScreen extends StatelessWidget {
           SizedBox(width: 10),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            // InfoCard Component
-            InfoCard(
-              avatarUrl: 'https://via.placeholder.com/150',
-              name: 'Nitish Kumar',
-              course: 'Computer Science',
-              duration: '4 Years',
-              block: 'BH3',
-              roomNumber: '407',
-              stayDuration: '2022 - 2026',
-              backgroundColor: Colors.green.shade50,
-            ),
-            const SizedBox(height: 20),
-            QuickAccess(),
-          ],
+      body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              // InfoCard Component
+              InfoCard(
+                avatarUrl: 'assets/profile_photo.png',
+                name: 'Nitish Kumar',
+                course: 'Computer Science',
+                duration: '4 Years',
+                block: 'BH3',
+                roomNumber: '407',
+                stayDuration: '2022 - 2026',
+                backgroundColor: Colors.green.shade50,
+              ),
+              const SizedBox(height: 20),
+              QuickAccess(),
+              CommunityEvents(),
+            ],
+          ),
         ),
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.green.shade900,
-              ),
-              child: const Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Center(
-                    child: CircleAvatar(
-                      radius: 40,
-                      backgroundImage:
-                          NetworkImage('https://via.placeholder.com/150'),
-                    ),
-                  ),
-                  SizedBox(height: 8),
-                  Center(
-                    child: Text(
-                      'Nitish Kumar',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Center(
-                    child: Text(
-                      'nitish.202204098@tulas.edu.in',
-                      style: TextStyle(
-                        color: Colors.white70,
-                        fontSize: 14,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            ListTile(
-              leading: const Icon(Icons.dashboard),
-              title: const Text('Dashboard'),
-              onTap: () {
-                // Handle navigation
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.person),
-              title: const Text('Profile'),
-              onTap: () {
-                // Handle navigation
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.settings),
-              title: const Text('Settings'),
-              onTap: () {
-                // Handle navigation
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.logout),
-              title: const Text('Logout'),
-              onTap: () {
-                // Handle logout
-              },
-            ),
-          ],
-        ),
-      ),
+      drawer: CustomDrawer(),
     );
   }
 }
