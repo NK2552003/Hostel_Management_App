@@ -4,22 +4,6 @@ import 'package:hostel_management_app/components/event_list.dart';
 import 'package:hostel_management_app/components/info_card.dart';
 import 'package:hostel_management_app/components/quick_access.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: DashboardScreen(),
-    );
-  }
-}
-
 class DashboardScreen extends StatelessWidget {
   DashboardScreen({Key? key}) : super(key: key);
 
