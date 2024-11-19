@@ -12,14 +12,14 @@ class FeesOverview extends StatelessWidget {
       width: 205,
       height: 185,
       child: Card(
-        color: Colors.green.shade50,
+        color: Colors.orange.shade50,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 1,
         shadowColor: Colors.green.withOpacity(0.4),
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.green.shade900, width: 1),
+            border: Border.all(color: Colors.orange.shade900, width: 1),
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
