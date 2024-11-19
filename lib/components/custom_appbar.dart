@@ -16,7 +16,7 @@ class _CustomAppbarState extends State<CustomAppbar> {
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.green.shade900,
+            color: const Color.fromARGB(255, 18, 63, 21),
             borderRadius: BorderRadius.circular(15), // Circular from all sides
             // boxShadow: [
             //   BoxShadow(

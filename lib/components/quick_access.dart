@@ -12,55 +12,55 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/room.png",
       "label": "Room Management",
-      "color": Colors.blueAccent,
+      "color": Colors.green.shade800,
       "onTap": () {},
     },
     {
       "image": "assets/pay.png",
       "label": "Fee Payments",
-      "color": Colors.grey.shade700,
+      "color": Colors.green.shade600,
       "onTap": () {},
     },
     {
       "image": "assets/doc.png",
       "label": "Documentation",
-      "color": Colors.yellow.shade700,
-      "onTap": () {},
-    },
-    {
-      "image": "assets/issue.png",
-      "label": "Report an Issue",
-      "color": Colors.red,
+      "color": Colors.teal.shade400,
       "onTap": () {},
     },
     {
       "image": "assets/comm.png",
       "label": "Student Groups",
-      "color": Colors.purple.shade700,
+      "color": Colors.teal.shade600,
       "onTap": () {},
     },
     {
       "image": "assets/security.png",
       "label": "Anti-Ragging",
-      "color": const Color.fromARGB(255, 114, 31, 31),
+      "color": Colors.green.shade700,
       "onTap": () {},
     },
     {
       "image": "assets/outing.png",
       "label": "Outings",
-      "color": Colors.green.shade900,
+      "color": Colors.lightGreen.shade600,
       "onTap": () {},
     },
     {
       "image": "assets/contact.png",
       "label": "Contact Info",
-      "color": Colors.amber.shade800,
+      "color": Colors.amber.shade700, // Soft yellow
       "onTap": () {},
     },
     {
       "image": "assets/help.png",
       "label": "Help Center",
-      "color": Colors.lightBlue,
+      "color": Colors.blue.shade400,
+      "onTap": () {},
+    },
+    {
+      "image": "assets/issue.png",
+      "label": "Report an Issue",
+      "color": Colors.red.shade400, // Muted red for warnings
       "onTap": () {},
     },
   ];

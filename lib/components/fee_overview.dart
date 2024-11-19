@@ -12,14 +12,14 @@ class FeesOverview extends StatelessWidget {
       width: 205,
       height: 185,
       child: Card(
-        color: Colors.orange.shade50,
+        color: Colors.green.shade50, // Light green background
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 1,
         shadowColor: Colors.green.withOpacity(0.4),
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.orange.shade900, width: 1),
+            border: Border.all(color: Colors.green.shade700, width: 1),
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -31,7 +31,7 @@ class FeesOverview extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
-                    color: Colors.black,
+                    color: Colors.green.shade900, // Dark green for text
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -42,8 +42,9 @@ class FeesOverview extends StatelessWidget {
                       sections: feeData.entries.map((entry) {
                         return PieChartSectionData(
                           color: entry.key == "Paid"
-                              ? Colors.green.shade700
-                              : Colors.red.shade900,
+                              ? Colors.green.shade500 // Harmonized green
+                              : Colors.orange
+                                  .shade400, // Muted orange for "Pending"
                           value: entry.value,
                           title: '${entry.value.toStringAsFixed(0)}%',
                           radius: 25,
@@ -72,8 +73,10 @@ class FeesOverview extends StatelessWidget {
                           height: 10,
                           decoration: BoxDecoration(
                             color: entry.key == "Paid"
-                                ? Colors.green.shade700
-                                : Colors.red.shade900,
+                                ? Colors
+                                    .green.shade600 // Darker green for "Paid"
+                                : Colors.orange
+                                    .shade600, // Consistent orange for "Pending"
                             borderRadius: BorderRadius.circular(5),
                           ),
                         ),
@@ -83,7 +86,8 @@ class FeesOverview extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
-                            color: Colors.grey.shade700,
+                            color:
+                                Colors.grey.shade700, // Neutral grey for labels
                           ),
                         ),
                       ],

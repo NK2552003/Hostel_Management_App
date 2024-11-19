@@ -13,14 +13,15 @@ class PendingDocuments extends StatelessWidget {
       width: 205,
       height: 185,
       child: Card(
-        color: Colors.blue.shade50,
+        color: Colors.green.shade50, // Light green background
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         elevation: 1,
         shadowColor: Colors.green.withOpacity(0.5),
         child: Container(
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              border: Border.all(color: Colors.blue.shade900, width: 1)),
+            borderRadius: BorderRadius.circular(15),
+            border: Border.all(color: Colors.green.shade700, width: 1),
+          ),
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -31,7 +32,7 @@ class PendingDocuments extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
-                    color: Colors.black,
+                    color: Colors.green.shade900, // Dark green for title
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -45,8 +46,10 @@ class PendingDocuments extends StatelessWidget {
                             physics: const ClampingScrollPhysics(),
                             itemCount:
                                 pendingDocs.length > 3 ? 3 : pendingDocs.length,
-                            separatorBuilder: (_, __) =>
-                                const Divider(height: 16, color: Colors.grey),
+                            separatorBuilder: (_, __) => const Divider(
+                              height: 16,
+                              color: Colors.grey,
+                            ),
                             itemBuilder: (context, index) {
                               return Row(
                                 mainAxisAlignment:
@@ -72,12 +75,13 @@ class PendingDocuments extends StatelessWidget {
                             onPressed: () {
                               // Implement navigation to a detailed view of all documents
                             },
-                            child: const Text(
+                            child: Text(
                               "See All",
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
-                                color: Colors.green,
+                                color:
+                                    Colors.green.shade600, // Button text green
                               ),
                             ),
                           ),
@@ -92,7 +96,8 @@ class PendingDocuments extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
-                          color: Colors.grey[600],
+                          color:
+                              Colors.green.shade600, // Subtle green placeholder
                         ),
                       ),
                     ),
