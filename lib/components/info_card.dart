@@ -31,7 +31,7 @@ class InfoCard extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
-        elevation: 6,
+        elevation: 1,
         child: Container(
           decoration: BoxDecoration(
             border: Border.all(

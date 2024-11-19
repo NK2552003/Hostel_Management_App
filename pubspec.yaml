@@ -40,6 +40,8 @@ dependencies:
   flutter_svg:
   animated_text_kit: ^4.2.0
   image_picker: ^1.1.2
+  fl_chart: ^0.69.0
+  animated_background: ^2.0.0
 
 dev_dependencies:
   flutter_test:
