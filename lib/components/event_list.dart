@@ -29,100 +29,127 @@ class CommunityEvents extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
+                color: Colors.black, // Match the primary color
               ),
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 30),
           Expanded(
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.green.shade50,
+                gradient: LinearGradient(
+                  colors: [Colors.green.shade50, Colors.green.shade100],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                  color: Colors.green.shade900, // Border color
-                  width: 1, // Border width
+                  color: Colors.green.shade700, // Match primary color
+                  width: 1.5,
                 ),
               ),
               child: ListView(
                 children: [
                   // Community Events Section
-                  Text(
-                    "Community Events",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue.shade900,
+                  Container(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.green.shade900, // Light accent for header
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      "Community Events",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white, // Darker accent color
+                      ),
+                      textAlign: TextAlign.center,
                     ),
                   ),
                   const SizedBox(height: 20),
                   ...communityEvents.map((event) {
                     return Card(
-                      margin: const EdgeInsets.symmetric(vertical: 4),
+                      color: Colors.white,
+                      margin: const EdgeInsets.symmetric(vertical: 6),
+                      elevation: 1,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
                       child: ListTile(
-                        shape: RoundedRectangleBorder(
-                          borderRadius:
-                              BorderRadius.circular(12), // Circular border
-                          side: BorderSide(
-                            color: Colors.green.shade900, // Border color
-                            width: 1, // Border width
+                        leading: CircleAvatar(
+                          backgroundColor:
+                              Colors.green.shade100, // Accent shade
+                          child: Icon(
+                            Icons.event,
+                            color: Colors.green.shade900, // Match darker theme
                           ),
-                        ),
-                        tileColor:
-                            Colors.green.shade100, // Tile background color
-                        leading: Icon(
-                          Icons.event,
-                          color: Colors.blue.shade900,
                         ),
                         title: Text(
                           event,
                           style: const TextStyle(
                             fontSize: 14,
+                            fontWeight: FontWeight.w500,
                             color: Colors.black87,
                           ),
+                        ),
+                        trailing: Icon(
+                          Icons.chevron_right,
+                          color: Colors.green.shade700, // Primary theme color
                         ),
                       ),
                     );
                   }).toList(),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const Divider(thickness: 2),
+                  const SizedBox(height: 20),
+                  const Divider(thickness: 1.5),
 
                   // Announcements Section
-                  Text(
-                    "Announcements",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green.shade900,
+                  Container(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.green.shade900, // Light accent for header
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      "Announcements",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white, // Darker accent color
+                      ),
+                      textAlign: TextAlign.center,
                     ),
                   ),
                   const SizedBox(height: 20),
                   ...announcements.map((announcement) {
                     return Card(
-                      margin: const EdgeInsets.symmetric(vertical: 4),
+                      color: Colors.white,
+                      margin: const EdgeInsets.symmetric(vertical: 6),
+                      elevation: 1,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
                       child: ListTile(
-                        shape: RoundedRectangleBorder(
-                          borderRadius:
-                              BorderRadius.circular(12), // Circular border
-                          side: BorderSide(
-                            color: Colors.green.shade900, // Border color
-                            width: 1, // Border width
+                        leading: CircleAvatar(
+                          backgroundColor:
+                              Colors.green.shade100, // Accent shade
+                          child: Icon(
+                            Icons.announcement,
+                            color: Colors.green.shade900, // Match darker theme
                           ),
-                        ),
-                        tileColor:
-                            Colors.green.shade100, // Tile background color
-                        leading: Icon(
-                          Icons.announcement,
-                          color: Colors.green.shade900,
                         ),
                         title: Text(
                           announcement,
                           style: const TextStyle(
                             fontSize: 14,
+                            fontWeight: FontWeight.w500,
                             color: Colors.black87,
                           ),
+                        ),
+                        trailing: Icon(
+                          Icons.chevron_right,
+                          color: Colors.green.shade700, // Primary theme color
                         ),
                       ),
                     );

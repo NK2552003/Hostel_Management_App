@@ -10,67 +10,58 @@ class QuickAccess extends StatefulWidget {
 class _QuickAccessState extends State<QuickAccess> {
   final List<Map<String, dynamic>> buttonData = [
     {
-      "icon": Icons.meeting_room,
+      "image": "assets/room.png",
       "label": "Room Management",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": Colors.blueAccent,
+      "onTap": () {},
     },
     {
-      "icon": Icons.payment,
+      "image": "assets/pay.png",
       "label": "Fee Payments",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": Colors.grey.shade700,
+      "onTap": () {},
     },
     {
-      "icon": Icons.book,
+      "image": "assets/doc.png",
       "label": "Documentation",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": Colors.yellow.shade700,
+      "onTap": () {},
     },
     {
-      "icon": Icons.report_problem,
+      "image": "assets/issue.png",
       "label": "Report an Issue",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": Colors.red,
+      "onTap": () {},
     },
     {
-      "icon": Icons.groups,
+      "image": "assets/comm.png",
       "label": "Student Groups",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": Colors.purple.shade700,
+      "onTap": () {},
     },
     {
-      "icon": Icons.shield,
+      "image": "assets/security.png",
       "label": "Anti-Ragging",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": const Color.fromARGB(255, 114, 31, 31),
+      "onTap": () {},
     },
     {
-      "icon": Icons.holiday_village_rounded,
+      "image": "assets/outing.png",
       "label": "Outings",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": Colors.green.shade900,
+      "onTap": () {},
     },
     {
-      "icon": Icons.contact_phone,
+      "image": "assets/contact.png",
       "label": "Contact Info",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": Colors.amber.shade800,
+      "onTap": () {},
     },
     {
-      "icon": Icons.help_center,
+      "image": "assets/help.png",
       "label": "Help Center",
-      "onTap": () {
-        // Add navigation or action
-      },
+      "color": Colors.lightBlue,
+      "onTap": () {},
     },
   ];
 
@@ -89,44 +80,49 @@ class _QuickAccessState extends State<QuickAccess> {
           ),
           const SizedBox(height: 16),
           Wrap(
-            spacing: 10, // Horizontal space between items
-            runSpacing: 10, // Vertical space between items
+            spacing: 10,
+            runSpacing: 10,
             alignment: WrapAlignment.center,
             children: buttonData.map((item) {
+              final String? imagePath = item['image'] as String?;
+              final Color color = item['color'] ?? Colors.grey;
               return SizedBox(
                 width: 130,
-                height: 110, // Fixed width and height for each item
+                height: 110,
                 child: InkWell(
-                  onTap: item['onTap'], // Trigger assigned action
-                  borderRadius: BorderRadius.circular(12), // Ripple shape
-                  splashColor: Colors.green.withOpacity(0.2), // Ripple color
-                  highlightColor: Colors.green.withOpacity(0.1), // Tap color
+                  onTap: item['onTap'],
+                  borderRadius: BorderRadius.circular(12),
                   child: Card(
-                    color: Colors.green.shade50,
-                    elevation: 4,
+                    color: color.withOpacity(0.1),
+                    elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                       side: BorderSide(
-                        color: Colors.green.shade700, // Border color
-                        width: 1, // Border width
+                        color: color,
+                        width: 1.1,
                       ),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
-                          item['icon'],
-                          size: 40,
-                          color: Colors.green.shade900,
+                        Image.asset(
+                          imagePath ?? 'assets/default.png', // Fallback image
+                          width: 40,
+                          height: 40,
+                          errorBuilder: (context, error, stackTrace) => Icon(
+                            Icons.broken_image,
+                            size: 40,
+                            color: color,
+                          ),
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          item['label'],
+                          item['label'] ?? '',
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
-                            color: Colors.black87,
+                            color: color.darken(0.3),
                           ),
                         ),
                       ],
@@ -139,5 +135,16 @@ class _QuickAccessState extends State<QuickAccess> {
         ],
       ),
     );
+  }
+}
+
+extension ColorUtils on Color {
+  /// Darkens the color by [amount] (value between 0 and 1).
+  Color darken([double amount = .1]) {
+    assert(amount >= 0 && amount <= 1);
+    final hsl = HSLColor.fromColor(this);
+    final darkened =
+        hsl.withLightness((hsl.lightness - amount).clamp(0.0, 1.0));
+    return darkened.toColor();
   }
 }

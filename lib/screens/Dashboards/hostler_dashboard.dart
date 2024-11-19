@@ -31,20 +31,16 @@ class DashboardScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Container(
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Colors.green.shade900, Colors.green.shade900],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
+                color: Colors.green.shade900,
                 borderRadius:
-                    BorderRadius.circular(20), // Circular from all sides
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.green.withOpacity(0.4),
-                    blurRadius: 10,
-                    offset: Offset(0, 4), // Shadow below the AppBar
-                  ),
-                ],
+                    BorderRadius.circular(15), // Circular from all sides
+                // boxShadow: [
+                //   BoxShadow(
+                //     color: Colors.green.withOpacity(0.4),
+                //     blurRadius: 10,
+                //     offset: Offset(0, 4), // Shadow below the AppBar
+                //   ),
+                // ],
               ),
               child: SizedBox(
                 height: 60,
