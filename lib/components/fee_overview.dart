@@ -80,10 +80,10 @@ class FeesOverview extends StatelessWidget {
                         const SizedBox(width: 6),
                         Text(
                           entry.key,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
-                            color: Colors.grey,
+                            color: Colors.grey.shade700,
                           ),
                         ),
                       ],
