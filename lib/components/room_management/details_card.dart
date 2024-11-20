@@ -1,74 +1,62 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const RoomDetailsApp());
-}
-
-class RoomDetailsApp extends StatelessWidget {
-  const RoomDetailsApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Room Details'),
-          backgroundColor: Colors.green,
-        ),
-        body: const RoomDetails(),
-      ),
-    );
-  }
-}
-
 class RoomDetails extends StatelessWidget {
   const RoomDetails({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.green.shade50,
+      // margin: const EdgeInsets.all(16),
+      elevation: 6,
+      color: Colors.teal[50],
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+      ),
       child: Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.green.shade900)),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Colors.teal, width: 1.5),
+        ),
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 'Room Details',
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 26,
                   fontWeight: FontWeight.bold,
-                  color: Colors.green.shade900,
+                  color: Colors.green.shade800,
                 ),
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 20),
               // First Row (2 cards)
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  RoomCard(title: 'Block', content: 'A'),
-                  RoomCard(title: 'Room No.', content: '101'),
+                  RoomCard(title: 'Block', content: 'BH3'),
+                  RoomCard(title: 'Room No.', content: '407'),
                 ],
               ),
-              const SizedBox(height: 6),
+              const SizedBox(height: 10),
               // Second Row (1 card)
               Row(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  Flexible(
-                    child:
-                        RoomCard(title: 'Occupant Name', content: 'John Doe'),
-                  ),
+                  RoomCard(title: 'Occupant Name', content: 'Nitish Kumar'),
                 ],
               ),
-              const SizedBox(height: 6),
-              // Third Row (2 cards)
+              const SizedBox(height: 10),
+              // Third Row (1 card)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  RoomCard(title: 'Sharing With', content: 'Aditya Sharma'),
+                ],
+              ),
+              const SizedBox(height: 10),
+              // Fourth Row (2 cards)
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
@@ -94,15 +82,16 @@ class RoomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Card(
-        color: Colors.green[50],
-        elevation: 0,
+        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+        elevation: 3,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
+        color: Colors.white,
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.green.shade900, width: 1.3),
+            border: Border.all(color: Colors.green.shade900, width: 1.2),
           ),
           child: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -111,19 +100,19 @@ class RoomCard extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.green,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.green.shade900,
                   ),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 8),
                 Text(
                   content,
                   style: const TextStyle(
-                    fontSize: 16,
-                    color: Colors.black87,
-                  ),
+                      fontSize: 16,
+                      color: Colors.black87,
+                      fontWeight: FontWeight.w500),
                   textAlign: TextAlign.center,
                 ),
               ],
