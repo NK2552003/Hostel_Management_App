@@ -5,7 +5,8 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: const Color.fromARGB(255, 21, 73, 25),
+        color: Colors.green.shade200,
+        // color: const Color.fromARGB(255, 21, 73, 25),
         child: Column(
           children: [
             // Drawer Header
@@ -17,13 +18,13 @@ class CustomDrawer extends StatelessWidget {
                   CircleAvatar(
                     radius: 40,
                     backgroundImage: AssetImage("assets/profile_photo.png"),
-                    backgroundColor: Colors.white,
+                    backgroundColor: Colors.black,
                   ),
                   const SizedBox(height: 2),
                   const Text(
                     'Nitish Kumar',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
@@ -31,7 +32,7 @@ class CustomDrawer extends StatelessWidget {
                   const Text(
                     'nitish.202204098@tulas.edu.in',
                     style: TextStyle(
-                      color: Colors.white70,
+                      color: Colors.black54,
                       fontSize: 14,
                     ),
                   ),
@@ -64,24 +65,24 @@ class CustomDrawer extends StatelessWidget {
               padding: const EdgeInsets.all(12.0),
               child: Column(
                 children: [
-                  const Divider(color: Colors.white70, thickness: 0.5),
+                  const Divider(color: Colors.white, thickness: 0.5),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       IconButton(
-                        icon: const Icon(Icons.email, color: Colors.white),
+                        icon: const Icon(Icons.email, color: Colors.blue),
                         onPressed: () {
                           // Handle email tap
                         },
                       ),
                       IconButton(
-                        icon: const Icon(Icons.phone, color: Colors.white),
+                        icon: Icon(Icons.phone, color: Colors.green.shade900),
                         onPressed: () {
                           // Handle phone tap
                         },
                       ),
                       IconButton(
-                        icon: const Icon(Icons.link, color: Colors.white),
+                        icon: Icon(Icons.link, color: Colors.orange.shade900),
                         onPressed: () {
                           // Handle website/social media link tap
                         },
@@ -101,7 +102,7 @@ class CustomDrawer extends StatelessWidget {
       IconData icon, String title, VoidCallback onTap) {
     return InkWell(
       onTap: onTap,
-      splashColor: Colors.greenAccent.withOpacity(0.3),
+      // splashColor: Colors.greenAccent.withOpacity(0.3),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: Padding(
@@ -111,18 +112,18 @@ class CustomDrawer extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 10),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
-                color: Colors.green.withOpacity(0.13),
-                border: Border.all(color: Colors.white70)),
+                color: Colors.green.withOpacity(0.4),
+                border: Border.all(color: Colors.green.shade900, width: 1.5)),
             child: Row(
               children: [
                 const SizedBox(width: 20),
-                Icon(icon, color: Colors.white, size: 28),
+                Icon(icon, color: Colors.black, size: 28),
                 const SizedBox(width: 16),
                 Expanded(
                   child: Text(
                     title,
                     style: const TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
                     ),

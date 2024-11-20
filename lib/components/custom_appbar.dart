@@ -16,8 +16,10 @@ class _CustomAppbarState extends State<CustomAppbar> {
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Container(
           decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 21, 73, 25),
+            color: Colors.green.shade200,
+            // color: const Color.fromARGB(255, 21, 73, 25),
             borderRadius: BorderRadius.circular(15), // Circular from all sides
+            border: Border.all(color: Colors.green.shade900, width: 1.5),
             // boxShadow: [
             //   BoxShadow(
             //     color: Colors.green.withOpacity(0.4),
@@ -37,7 +39,7 @@ class _CustomAppbarState extends State<CustomAppbar> {
                   style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 // Left-aligned menu icon
@@ -46,7 +48,7 @@ class _CustomAppbarState extends State<CustomAppbar> {
                   child: Builder(
                     builder: (BuildContext context) {
                       return IconButton(
-                        icon: const Icon(Icons.menu, color: Colors.white),
+                        icon: const Icon(Icons.menu, color: Colors.black),
                         onPressed: () {
                           Scaffold.of(context).openDrawer();
                         },
@@ -62,14 +64,14 @@ class _CustomAppbarState extends State<CustomAppbar> {
                     children: [
                       IconButton(
                         icon: const Icon(Icons.warning_amber_rounded,
-                            color: Colors.white),
+                            color: Colors.black),
                         onPressed: () {
                           // Handle emergency action
                         },
                       ),
                       IconButton(
                         icon: const Icon(Icons.notifications,
-                            color: Colors.white),
+                            color: Colors.black),
                         onPressed: () {
                           // Handle notifications action
                         },
