@@ -12,55 +12,55 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/room.png",
       "label": "Room Management",
-      "color": Colors.green.shade800,
+      "color": Colors.green.shade50,
       "onTap": () {},
     },
     {
       "image": "assets/pay.png",
       "label": "Fee Payments",
-      "color": Colors.green.shade600,
+      "color": Colors.green.shade100,
       "onTap": () {},
     },
     {
       "image": "assets/doc.png",
       "label": "Documentation",
-      "color": Colors.teal.shade400,
+      "color": Colors.teal.shade50,
       "onTap": () {},
     },
     {
       "image": "assets/comm.png",
       "label": "Student Groups",
-      "color": Colors.teal.shade600,
+      "color": Colors.teal.shade100,
       "onTap": () {},
     },
     {
       "image": "assets/security.png",
       "label": "Anti-Ragging",
-      "color": Colors.green.shade700,
+      "color": Colors.green.shade200,
       "onTap": () {},
     },
     {
       "image": "assets/outing.png",
       "label": "Outings",
-      "color": Colors.lightGreen.shade600,
+      "color": Colors.lightGreen.shade100,
       "onTap": () {},
     },
     {
       "image": "assets/contact.png",
       "label": "Contact Info",
-      "color": Colors.amber.shade700, // Soft yellow
+      "color": Colors.amber.shade100, // Soft yellow
       "onTap": () {},
     },
     {
       "image": "assets/help.png",
       "label": "Help Center",
-      "color": Colors.blue.shade400,
+      "color": Colors.blue.shade100,
       "onTap": () {},
     },
     {
       "image": "assets/issue.png",
       "label": "Report an Issue",
-      "color": Colors.red.shade400, // Muted red for warnings
+      "color": Colors.red.shade100, // Muted red for warnings
       "onTap": () {},
     },
   ];
@@ -93,12 +93,12 @@ class _QuickAccessState extends State<QuickAccess> {
                   onTap: item['onTap'],
                   borderRadius: BorderRadius.circular(12),
                   child: Card(
-                    color: color.withOpacity(0.1),
+                    color: color,
                     elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                       side: BorderSide(
-                        color: color,
+                        color: Colors.green.shade900,
                         width: 1.1,
                       ),
                     ),
@@ -122,7 +122,7 @@ class _QuickAccessState extends State<QuickAccess> {
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
-                            color: color.darken(0.3),
+                            color: Colors.black,
                           ),
                         ),
                       ],

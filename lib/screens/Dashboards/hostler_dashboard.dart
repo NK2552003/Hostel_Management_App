@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // For SystemUiOverlayStyle
+import 'package:hostel_management_app/components/bubble_background.dart';
 import 'package:hostel_management_app/components/custom_appbar.dart';
 import 'package:hostel_management_app/components/custom_drawer.dart';
 import 'package:hostel_management_app/components/event_list.dart';
@@ -31,6 +32,7 @@ class DashboardScreen extends StatelessWidget {
           )),
       body: Stack(
         children: [
+          BubblesBackground(),
           // Animated background shapes
           SingleChildScrollView(
             physics: const BouncingScrollPhysics(),

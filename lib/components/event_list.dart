@@ -38,11 +38,12 @@ class CommunityEvents extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Colors.green.shade50, Colors.green.shade100],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
+                color: Colors.green.shade50,
+                // gradient: LinearGradient(
+                //   colors: [Colors.green.shade50, Colors.green.shade100],
+                //   begin: Alignment.topLeft,
+                //   end: Alignment.bottomRight,
+                // ),
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: Colors.green.shade700, // Match primary color
