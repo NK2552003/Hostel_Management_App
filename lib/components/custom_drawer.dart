@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomDrawer extends StatelessWidget {
+  const CustomDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -20,8 +22,8 @@ class CustomDrawer extends StatelessWidget {
                     backgroundImage: AssetImage("assets/profile_photo.png"),
                     backgroundColor: Colors.black,
                   ),
-                  const SizedBox(height: 2),
-                  const Text(
+                  SizedBox(height: 2),
+                  Text(
                     'Nitish Kumar',
                     style: TextStyle(
                       color: Colors.black,
@@ -29,7 +31,7 @@ class CustomDrawer extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const Text(
+                  Text(
                     'nitish.202204098@tulas.edu.in',
                     style: TextStyle(
                       color: Colors.black54,

@@ -4,11 +4,11 @@ import 'package:fl_chart/fl_chart.dart';
 class FeesOverview extends StatelessWidget {
   final Map<String, double> feeData; // Example: {'Paid': 70, 'Pending': 30}
 
-  FeesOverview({required this.feeData});
+  const FeesOverview({super.key, required this.feeData});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 205,
       height: 185,
       child: Card(

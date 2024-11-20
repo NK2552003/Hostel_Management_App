@@ -15,6 +15,8 @@ class CommunityEvents extends StatelessWidget {
     "Contact Update Reminder",
   ];
 
+  CommunityEvents({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -59,7 +61,7 @@ class CommunityEvents extends StatelessWidget {
                       color: Colors.green.shade900, // Light accent for header
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Text(
+                    child: const Text(
                       "Community Events",
                       style: TextStyle(
                         fontSize: 16,
@@ -101,7 +103,7 @@ class CommunityEvents extends StatelessWidget {
                         ),
                       ),
                     );
-                  }).toList(),
+                  }),
                   const SizedBox(height: 20),
                   const Divider(thickness: 1.5),
 
@@ -112,7 +114,7 @@ class CommunityEvents extends StatelessWidget {
                       color: Colors.green.shade900, // Light accent for header
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Text(
+                    child: const Text(
                       "Announcements",
                       style: TextStyle(
                         fontSize: 16,
@@ -154,7 +156,7 @@ class CommunityEvents extends StatelessWidget {
                         ),
                       ),
                     );
-                  }).toList(),
+                  }),
                 ],
               ),
             ),

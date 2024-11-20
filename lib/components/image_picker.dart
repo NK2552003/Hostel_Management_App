@@ -3,6 +3,8 @@ import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 
 class ProfilePictureUploader extends StatefulWidget {
+  const ProfilePictureUploader({super.key});
+
   @override
   _ProfilePictureUploaderState createState() => _ProfilePictureUploaderState();
 }

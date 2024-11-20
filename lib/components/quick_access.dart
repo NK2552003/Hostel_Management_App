@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class QuickAccess extends StatefulWidget {
-  QuickAccess({super.key});
+  const QuickAccess({super.key});
 
   @override
   State<QuickAccess> createState() => _QuickAccessState();
@@ -119,7 +119,7 @@ class _QuickAccessState extends State<QuickAccess> {
                         Text(
                           item['label'] ?? '',
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,

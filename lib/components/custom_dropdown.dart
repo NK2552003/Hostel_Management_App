@@ -8,13 +8,13 @@ class CustomDropdown<T> extends StatelessWidget {
   final String? Function(T?)? validator;
 
   const CustomDropdown({
-    Key? key,
+    super.key,
     required this.labelText,
     required this.items,
     required this.onChanged,
     this.selectedValue,
     this.validator,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class PendingDocuments extends StatelessWidget {
   final List<String> pendingDocs;
 
-  PendingDocuments({required this.pendingDocs});
+  const PendingDocuments({super.key, required this.pendingDocs});
 
   @override
   Widget build(BuildContext context) {
     bool hasPendingDocs = pendingDocs.isNotEmpty;
 
-    return Container(
+    return SizedBox(
       width: 205,
       height: 185,
       child: Card(

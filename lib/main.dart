@@ -1,8 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:hostel_management_app/screens/Dashboards/hostler_dashboard.dart';
-import 'package:hostel_management_app/screens/onboarding_screen.dart';
-import 'package:hostel_management_app/screens/sign_up_hostler.dart';
+import 'package:hostel_management_app/screens/Hostler/room_management.dart';
 
 void main() {
   runApp(const MyApp());
@@ -54,7 +53,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        nextScreen: DashboardScreen(),
+        nextScreen: RoomManagementPage(),
         splashTransition: SplashTransition.fadeTransition,
       ),
     );

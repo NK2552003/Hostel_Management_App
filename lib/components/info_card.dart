@@ -11,7 +11,7 @@ class InfoCard extends StatelessWidget {
   final Color backgroundColor;
 
   const InfoCard({
-    Key? key,
+    super.key,
     required this.avatarUrl,
     required this.name,
     required this.course,
@@ -20,7 +20,7 @@ class InfoCard extends StatelessWidget {
     required this.roomNumber,
     required this.stayDuration,
     this.backgroundColor = Colors.white60,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

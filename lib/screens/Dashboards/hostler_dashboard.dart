@@ -10,7 +10,7 @@ import 'package:hostel_management_app/components/pending_document.dart';
 import 'package:hostel_management_app/components/quick_access.dart';
 
 class DashboardScreen extends StatelessWidget {
-  DashboardScreen({Key? key}) : super(key: key);
+  const DashboardScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class DashboardScreen extends StatelessWidget {
           )),
       body: Stack(
         children: [
-          BubblesBackground(),
+          const BubblesBackground(),
           // Animated background shapes
           SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
@@ -55,10 +55,14 @@ class DashboardScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       FeesOverview(
-                        feeData: {'Paid': 70, 'Pending': 30},
+                        feeData: const {'Paid': 70, 'Pending': 30},
                       ),
                       PendingDocuments(
-                        pendingDocs: ['ID Proof', 'Photo', 'Address Proof'],
+                        pendingDocs: const [
+                          'ID Proof',
+                          'Photo',
+                          'Address Proof'
+                        ],
                       ),
                     ],
                   ),

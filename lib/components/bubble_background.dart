@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class BubblesBackground extends StatefulWidget {
-  const BubblesBackground({Key? key}) : super(key: key);
+  const BubblesBackground({super.key});
 
   @override
   _BubblesBackgroundState createState() => _BubblesBackgroundState();

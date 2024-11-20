@@ -73,19 +73,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 const CustomText(),
                 const SizedBox(height: 20),
-                CustomTextField(
+                const CustomTextField(
                   labled: "Full Name",
                   text: "Enter your full name",
                 ),
                 const SizedBox(height: 16),
-                CustomTextField(labled: "Date of Birth", text: "YYYY-MM-DD"),
+                const CustomTextField(
+                    labled: "Date of Birth", text: "YYYY-MM-DD"),
                 const SizedBox(height: 16),
                 CustomDropdown(
                   labelText: "Gender",
                   items: const [
-                    DropdownMenuItem(child: Text('Male'), value: "M"),
-                    DropdownMenuItem(child: Text('Female'), value: "F"),
-                    DropdownMenuItem(child: Text('Other'), value: "Other"),
+                    DropdownMenuItem(value: "M", child: Text('Male')),
+                    DropdownMenuItem(value: "F", child: Text('Female')),
+                    DropdownMenuItem(value: "Other", child: Text('Other')),
                   ],
                   onChanged: (value) {
                     setState(() {
@@ -100,29 +101,29 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   },
                 ),
                 const SizedBox(height: 16),
-                CustomTextField(labled: "Contact Number", text: ""),
+                const CustomTextField(labled: "Contact Number", text: ""),
                 const SizedBox(height: 16),
-                CustomTextField(labled: "Email Address", text: ""),
+                const CustomTextField(labled: "Email Address", text: ""),
                 const SizedBox(height: 16),
-                CustomTextField(
+                const CustomTextField(
                     labled: "Student ID Number (Verify)", text: "College ID"),
                 const SizedBox(height: 16),
-                CustomTextField(
+                const CustomTextField(
                     labled: "Create Password", text: "Enter the password here"),
                 const SizedBox(height: 16),
-                CustomTextField(
+                const CustomTextField(
                     labled: "Confirm Password",
                     text: "Re-enter the password here"),
                 const SizedBox(height: 16),
                 CustomDropdown(
                   labelText: "Room Preferences",
                   items: const [
-                    DropdownMenuItem(child: Text('Single'), value: "Single"),
-                    DropdownMenuItem(child: Text('Shared'), value: "Shared"),
+                    DropdownMenuItem(value: "Single", child: Text('Single')),
+                    DropdownMenuItem(value: "Shared", child: Text('Shared')),
                     DropdownMenuItem(
-                        child: Text('Single AC'), value: "Single AC"),
+                        value: "Single AC", child: Text('Single AC')),
                     DropdownMenuItem(
-                        child: Text('Shared AC'), value: "Shared AC"),
+                        value: "Shared AC", child: Text('Shared AC')),
                   ],
                   onChanged: (value) {
                     setState(() {
@@ -140,11 +141,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 CustomDropdown(
                   labelText: "Choose Building",
                   items: const [
-                    DropdownMenuItem(child: Text('BH1'), value: "BH1"),
-                    DropdownMenuItem(child: Text('BH2'), value: "BH2"),
-                    DropdownMenuItem(child: Text('BH3'), value: "BH3"),
-                    DropdownMenuItem(child: Text('BH4'), value: "BH4"),
-                    DropdownMenuItem(child: Text('Girls Hostel'), value: "GH"),
+                    DropdownMenuItem(value: "BH1", child: Text('BH1')),
+                    DropdownMenuItem(value: "BH2", child: Text('BH2')),
+                    DropdownMenuItem(value: "BH3", child: Text('BH3')),
+                    DropdownMenuItem(value: "BH4", child: Text('BH4')),
+                    DropdownMenuItem(value: "GH", child: Text('Girls Hostel')),
                   ],
                   onChanged: (value) {
                     setState(() {
@@ -159,14 +160,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   },
                 ),
                 const SizedBox(height: 16),
-                CustomTextField(
+                const CustomTextField(
                     labled: "Enter the Room Number", text: "Example: 101-118"),
                 const SizedBox(height: 16),
-                CustomTextField(
+                const CustomTextField(
                     labled: "Emergency Contact Details",
                     text: "Enter parent's number here"),
                 const SizedBox(height: 16),
-                CustomTextField(
+                const CustomTextField(
                     labled: "Interest & Activities (Optional)", text: ""),
                 const SizedBox(height: 16),
                 Row(
