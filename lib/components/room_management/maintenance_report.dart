@@ -373,29 +373,50 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
                             margin: EdgeInsets.only(bottom: 8),
                             padding: EdgeInsets.all(8),
                             decoration: BoxDecoration(
-                                border:
-                                    Border.all(color: Colors.green.shade900),
-                                borderRadius: BorderRadius.circular(8),
-                                color: Colors.teal.shade50),
+                              border: Border.all(color: Colors.green.shade900),
+                              borderRadius: BorderRadius.circular(8),
+                              color: Colors.teal.shade50,
+                            ),
                             child: Row(
                               children: [
                                 Icon(Icons.report,
                                     size: 40, color: Colors.green.shade900),
                                 SizedBox(width: 8),
                                 Expanded(
-                                  child: Text(
-                                    report['description'] ??
-                                        "Unknown Description",
-                                    style: TextStyle(
-                                      color: Colors.green.shade900,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                  child: GestureDetector(
+                                    onTap: () {
+                                      // Navigate to a new blank screen
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => BlankScreen(
+                                              report:
+                                                  report), // Replace with your desired screen
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      report['description'] ??
+                                          "Unknown Description",
+                                      style: TextStyle(
+                                        color: Colors.green.shade900,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16,
+                                      ),
                                     ),
                                   ),
+                                ),
+                                IconButton(
+                                  icon: Icon(Icons.delete, color: Colors.red),
+                                  onPressed: () {
+                                    // Handle delete action
+                                    // Define this method to remove the tile
+                                  },
                                 ),
                               ],
                             ),
                           ),
+
                           subtitle: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -418,14 +439,6 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
                                             : Colors.green,
                                       ),
                                     ),
-                                    // Column(
-                                    //   crossAxisAlignment:
-                                    //       CrossAxisAlignment.start,
-                                    //   children: [
-                                    //     Text(
-                                    //         "${report['category']}, ${report['urgency']}"),
-                                    //   ],
-                                    // ),
                                   ],
                                 ),
                               ),
@@ -462,6 +475,140 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
                   ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class BlankScreen extends StatelessWidget {
+  final Map<String, dynamic> report;
+
+  const BlankScreen({Key? key, required this.report}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Report Details",
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.green.shade200,
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12.0),
+            ),
+            elevation: 0,
+            shadowColor: Colors.teal.shade100,
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Header with animation
+                  Center(
+                    child: Hero(
+                      tag: 'report-${report['studentId']}',
+                      child: Icon(
+                        Icons.report,
+                        size: 80,
+                        color: Colors.green.shade900,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  Center(
+                    child: Text(
+                      "Maintenance Report",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green.shade900,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  Divider(color: Colors.green.shade200, thickness: 1.5),
+                  // Details
+                  buildDetailRow("Full Name", report['fullName']),
+                  buildDetailRow("Room", report['room']),
+                  buildDetailRow("Student ID", report['studentId']),
+                  buildDetailRow("Category", report['category']),
+                  buildDetailRow("Description", report['description']),
+                  buildDetailRow("Urgency", report['urgency']),
+                  buildDetailRow("Phone", report['phone']),
+                  buildDetailRow("Allow Entry", report['allowEntry']),
+                  buildDetailRow("Date", report['date']),
+                  buildDetailRow("Status", report['status'],
+                      color: Colors.redAccent),
+                  SizedBox(height: 16),
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green.shade900,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 32,
+                          vertical: 12,
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      child: Text(
+                        "Close",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget buildDetailRow(String title, String value, {Color? color}) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            flex: 2,
+            child: Text(
+              "$title:",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: Colors.green.shade900,
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 3,
+            child: Text(
+              value,
+              style: TextStyle(
+                fontSize: 16,
+                color: color ?? Colors.black87,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
