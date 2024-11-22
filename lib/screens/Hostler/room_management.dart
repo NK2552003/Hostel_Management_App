@@ -3,6 +3,7 @@ import 'package:hostel_management_app/components/custom_appbar.dart';
 import 'package:hostel_management_app/components/custom_drawer.dart';
 import 'package:hostel_management_app/components/room_management/details_card.dart';
 import 'package:hostel_management_app/components/room_management/maintenance_report.dart';
+import 'package:hostel_management_app/components/room_management/request_form.dart';
 
 class RoomManagementPage extends StatefulWidget {
   @override
@@ -10,29 +11,36 @@ class RoomManagementPage extends StatefulWidget {
 }
 
 class _RoomManagementPageState extends State<RoomManagementPage> {
-  List<Map<String, String>> roomChangeRequests = [];
+  List<Map<String, dynamic>> roomChangeRequests = [];
 
   // Function to simulate form submission
-  void _submitRoomChangeRequest(String reason) {
+  void _submitRoomChangeRequest({
+    required String currentRoom,
+    required String preferredRoom,
+    required String reason,
+    required String urgency,
+    required String contact,
+    String? notes,
+  }) {
     setState(() {
       roomChangeRequests.add({
+        'currentRoom': currentRoom,
+        'preferredRoom': preferredRoom,
         'reason': reason,
+        'urgency': urgency,
+        'contact': contact,
+        'notes': notes,
         'status': 'Pending',
       });
     });
 
-    // // Simulate approval process
-    // Future.delayed(const Duration(seconds: 3), () {
-    //   setState(() {
-    //     roomChangeRequests.last['status'] = 'Approved'; // Mock status update
-    //   });
-    // });
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text("Room change request submitted!")),
+    );
   }
 
   // Function to show the room change form
   void _showRequestRoomChangeForm() {
-    final TextEditingController reasonController = TextEditingController();
-
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -40,95 +48,8 @@ class _RoomManagementPageState extends State<RoomManagementPage> {
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
       builder: (BuildContext context) {
-        return Padding(
-          padding: EdgeInsets.only(
-            top: 16,
-            left: 16,
-            right: 16,
-            bottom: MediaQuery.of(context).viewInsets.bottom + 16,
-          ),
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  "Request Room Change",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.green.shade900,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 20),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.green.shade50,
-                    borderRadius: BorderRadius.circular(12),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.green.withOpacity(0.2),
-                        blurRadius: 8,
-                        spreadRadius: 2,
-                      ),
-                    ],
-                  ),
-                  child: TextField(
-                    controller: reasonController,
-                    decoration: InputDecoration(
-                      labelText: "Reason for Change",
-                      hintText: "Enter the reason for requesting a room change",
-                      labelStyle: TextStyle(color: Colors.green.shade900),
-                      hintStyle: TextStyle(color: Colors.green.shade300),
-                      border: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide:
-                            BorderSide(color: Colors.green.shade900, width: 2),
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(12),
-                        ),
-                      ),
-                      prefixIcon:
-                          Icon(Icons.comment, color: Colors.green.shade900),
-                    ),
-                    maxLines: 3,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    if (reasonController.text.isNotEmpty) {
-                      _submitRoomChangeRequest(reasonController.text);
-                      Navigator.pop(context); // Close the modal
-                    } else {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text("Please enter a valid reason."),
-                          backgroundColor: Colors.red,
-                        ),
-                      );
-                    }
-                  },
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    backgroundColor: Colors.green.shade900,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    textStyle: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  child: const Text("Submit"),
-                ),
-              ],
-            ),
-          ),
+        return RequestRoomChangeForm(
+          onSubmit: _submitRoomChangeRequest,
         );
       },
     );
@@ -168,47 +89,37 @@ class _RoomManagementPageState extends State<RoomManagementPage> {
                       margin: const EdgeInsets.symmetric(vertical: 8),
                       child: Container(
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: Colors.green.shade900)),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(color: Colors.green.shade900),
+                        ),
                         child: ListTile(
                           tileColor: Colors.teal.shade50,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
                           ),
                           contentPadding: const EdgeInsets.all(16),
-                          title: Container(
-                            margin: const EdgeInsets.only(bottom: 10),
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 8, vertical: 3),
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(8),
-                                border:
-                                    Border.all(color: Colors.green.shade900)),
-                            child: Column(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text("Request to Room Change"),
+                          title: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Room Change Request",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.teal.shade800,
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Row(
-                                    children: [
-                                      Expanded(
-                                        child: Text(
-                                          request['reason']!,
-                                          style: const TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 16,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
+                              ),
+                              const SizedBox(height: 8),
+                              detailRow("Current Room", request['currentRoom']),
+                              detailRow(
+                                  "Preferred Room", request['preferredRoom']),
+                              detailRow("Reason", request['reason']),
+                              detailRow("Urgency", request['urgency']),
+                              detailRow("Contact", request['contact']),
+                              if (request['notes'] != null &&
+                                  request['notes']!.isNotEmpty)
+                                detailRow("Notes", request['notes']),
+                            ],
                           ),
                           subtitle: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -217,15 +128,16 @@ class _RoomManagementPageState extends State<RoomManagementPage> {
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 8, vertical: 3),
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: request['status'] == "Pending"
+                                      ? Colors.orange.shade50
+                                      : Colors.green.shade50,
+                                  border: Border.all(
                                     color: request['status'] == "Pending"
-                                        ? Colors.orange.shade50
-                                        : Colors.green.shade50,
-                                    border: Border.all(
-                                      color: request['status'] == "Pending"
-                                          ? Colors.orange
-                                          : Colors.green,
-                                    )),
+                                        ? Colors.orange
+                                        : Colors.green,
+                                  ),
+                                ),
                                 child: Text(
                                   "Status: ${request['status']}",
                                   style: TextStyle(
@@ -235,9 +147,21 @@ class _RoomManagementPageState extends State<RoomManagementPage> {
                                   ),
                                 ),
                               ),
-                              const Icon(
-                                Icons.delete,
-                                color: Colors.red,
+                              GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    roomChangeRequests.remove(request);
+                                  });
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    const SnackBar(
+                                      content: Text("Request deleted."),
+                                    ),
+                                  );
+                                },
+                                child: const Icon(
+                                  Icons.delete,
+                                  color: Colors.red,
+                                ),
                               ),
                             ],
                           ),
@@ -272,6 +196,39 @@ class _RoomManagementPageState extends State<RoomManagementPage> {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  // Helper widget to display a labeled row
+  Widget detailRow(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            flex: 2,
+            child: Text(
+              "$label:",
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                color: Colors.teal.shade900,
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 3,
+            child: Text(
+              value,
+              style: const TextStyle(
+                fontSize: 14,
+                color: Colors.black87,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

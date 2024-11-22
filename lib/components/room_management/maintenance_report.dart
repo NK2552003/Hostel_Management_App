@@ -184,7 +184,9 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
                         });
                       },
                       title: const Text(
-                          "Do you allow maintenance personnel to enter your room in your absence?"),
+                        "Do you allow maintenance personnel to enter your room in your absence?",
+                        style: TextStyle(fontSize: 14),
+                      ),
                       controlAffinity: ListTileControlAffinity.leading,
                     ),
                     const SizedBox(height: 16),
@@ -305,7 +307,7 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 6,
+      elevation: 2,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
