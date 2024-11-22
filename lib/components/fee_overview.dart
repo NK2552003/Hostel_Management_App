@@ -56,8 +56,8 @@ class FeesOverview extends StatelessWidget {
                         );
                       }).toList(),
                       sectionsSpace: 4,
-                      centerSpaceRadius: 18,
-                      centerSpaceColor: Colors.white,
+                      centerSpaceRadius: 20,
+                      centerSpaceColor: Colors.teal.shade50,
                       startDegreeOffset: -90,
                     ),
                   ),

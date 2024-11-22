@@ -12,16 +12,24 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
   List<Map<String, String>> maintenanceReports = [];
 
   final TextEditingController issueController = TextEditingController();
+  final TextEditingController fullNameController = TextEditingController();
+  final TextEditingController roomController = TextEditingController();
+  final TextEditingController studentIdController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
 
   void _createReport() {
-    // Open the form to create a maintenance report
+    // Show a modal bottom sheet to create a maintenance report
     showModalBottomSheet(
       context: context,
-      isScrollControlled: true, // Allow resizing with the keyboard
-      shape: RoundedRectangleBorder(
+      isScrollControlled: true, // Allow resizing when the keyboard is open
+      shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
       builder: (BuildContext context) {
+        String selectedCategory = "Plumbing"; // Default category
+        String urgencyLevel = "Low"; // Default urgency
+        bool allowEntry = false; // Default permission for room entry
+
         return Padding(
           padding: EdgeInsets.only(
             top: 16,
@@ -29,95 +37,232 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
             right: 16,
             bottom: MediaQuery.of(context).viewInsets.bottom + 16,
           ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                "Maintenance Request",
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.teal.shade800,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 20),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.green.shade50,
-                  borderRadius: BorderRadius.circular(12),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.green.withOpacity(0.2),
-                      blurRadius: 8,
-                      spreadRadius: 2,
+          child: StatefulBuilder(
+            builder: (context, setState) {
+              return SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    // Title
+                    Text(
+                      "Maintenance Request",
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.teal.shade800,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 20),
+
+                    // Full Name
+                    TextField(
+                      controller: fullNameController,
+                      decoration: InputDecoration(
+                        labelText: "Full Name",
+                        hintText: "Enter your full name",
+                        focusColor: Colors.green,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                        prefixIcon: const Icon(Icons.person),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Hostel Block/Room Number
+                    TextField(
+                      controller: roomController,
+                      decoration: InputDecoration(
+                        labelText: "Hostel Block/Room Number",
+                        hintText: "E.g., Block A, Room 101",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                        prefixIcon: const Icon(Icons.room),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Student ID
+                    TextField(
+                      controller: studentIdController,
+                      decoration: InputDecoration(
+                        labelText: "Student ID",
+                        hintText: "Enter your student ID",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                        prefixIcon: const Icon(Icons.badge),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Category of Maintenance
+                    DropdownButtonFormField<String>(
+                      value: selectedCategory,
+                      items: [
+                        "Plumbing",
+                        "Electrical",
+                        "Cleaning",
+                        "Furniture/Appliances",
+                        "Internet",
+                        "Others"
+                      ]
+                          .map((category) => DropdownMenuItem(
+                                value: category,
+                                child: Text(category),
+                              ))
+                          .toList(),
+                      onChanged: (value) {
+                        setState(() {
+                          selectedCategory = value!;
+                        });
+                      },
+                      decoration: InputDecoration(
+                        labelText: "Category of Maintenance",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Issue Description
+                    TextField(
+                      controller: issueController,
+                      decoration: InputDecoration(
+                        labelText: "Description of the Issue",
+                        hintText: "Explain the issue in detail",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                        prefixIcon: const Icon(Icons.report_problem),
+                      ),
+                      maxLines: 3,
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Urgency Level
+                    DropdownButtonFormField<String>(
+                      value: urgencyLevel,
+                      items: ["Low", "Medium", "High"]
+                          .map((level) => DropdownMenuItem(
+                                value: level,
+                                child: Text(level),
+                              ))
+                          .toList(),
+                      onChanged: (value) {
+                        setState(() {
+                          urgencyLevel = value!;
+                        });
+                      },
+                      decoration: InputDecoration(
+                        labelText: "Urgency Level",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Contact Number
+                    TextField(
+                      controller: phoneController,
+                      keyboardType: TextInputType.phone,
+                      decoration: InputDecoration(
+                        labelText: "Phone Number",
+                        hintText: "Enter your contact number",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                        prefixIcon: const Icon(Icons.phone),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Permission to Enter Room
+                    CheckboxListTile(
+                      value: allowEntry,
+                      onChanged: (value) {
+                        setState(() {
+                          allowEntry = value!;
+                        });
+                      },
+                      title: const Text(
+                          "Do you allow maintenance personnel to enter your room in your absence?"),
+                      controlAffinity: ListTileControlAffinity.leading,
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Submit Button
+                    ElevatedButton(
+                      onPressed: () {
+                        _submitMaintenanceReport(
+                          selectedCategory,
+                          urgencyLevel,
+                          allowEntry,
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        backgroundColor: Colors.teal.shade800,
+                        foregroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        textStyle: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      child: const Text("Submit"),
                     ),
                   ],
                 ),
-                child: TextField(
-                  controller: issueController,
-                  decoration: InputDecoration(
-                    labelText: "Issue Description",
-                    hintText: "Describe the issue in detail",
-                    labelStyle: TextStyle(color: Colors.green.shade900),
-                    hintStyle: TextStyle(color: Colors.green.shade300),
-                    border: const OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(12)),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Colors.green.shade900, width: 1.5),
-                      borderRadius: const BorderRadius.all(Radius.circular(12)),
-                    ),
-                    prefixIcon: Icon(Icons.report_problem,
-                        color: Colors.green.shade800),
-                  ),
-                  maxLines: 3,
-                ),
-              ),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  if (issueController.text.isEmpty) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: const Text(
-                            "Please enter a valid issue description."),
-                        backgroundColor: Colors.red.shade300,
-                      ),
-                    );
-                  } else {
-                    setState(() {
-                      maintenanceReports.add({
-                        'title': issueController.text,
-                        'status': 'Pending',
-                        'date': _formattedDate(),
-                      });
-                    });
-                    issueController.clear(); // Clear the input
-                    Navigator.pop(context); // Close the modal
-                  }
-                },
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  backgroundColor: Colors.green.shade900,
-                  foregroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  textStyle: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                child: const Text("Submit"),
-              ),
-            ],
+              );
+            },
           ),
         );
       },
     );
+  }
+
+// Submit Function
+  void _submitMaintenanceReport(
+      String category, String urgency, bool allowEntry) {
+    if (fullNameController.text.isEmpty ||
+        roomController.text.isEmpty ||
+        studentIdController.text.isEmpty ||
+        issueController.text.isEmpty ||
+        phoneController.text.isEmpty) {
+      // Show an error message if any input is empty
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: const Text("Please fill out all required fields."),
+          backgroundColor: Colors.red.shade300,
+        ),
+      );
+      return;
+    }
+
+    // Add the new maintenance report
+    setState(() {
+      maintenanceReports.add({
+        'fullName': fullNameController.text.trim(),
+        'room': roomController.text.trim(),
+        'studentId': studentIdController.text.trim(),
+        'category': category,
+        'description': issueController.text.trim(),
+        'urgency': urgency,
+        'phone': phoneController.text.trim(),
+        'allowEntry': allowEntry ? "Yes" : "No",
+        'date': _formattedDate(),
+        'status': "Pending", // Add status key
+      });
+    });
+
+    // Clear all input fields and close the modal
+    fullNameController.clear();
+    roomController.clear();
+    studentIdController.clear();
+    issueController.clear();
+    phoneController.clear();
+    Navigator.pop(context);
   }
 
   String _formattedDate() {
@@ -239,7 +384,8 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
                                 SizedBox(width: 8),
                                 Expanded(
                                   child: Text(
-                                    report['title']!,
+                                    report['description'] ??
+                                        "Unknown Description",
                                     style: TextStyle(
                                       color: Colors.green.shade900,
                                       fontWeight: FontWeight.bold,
@@ -262,13 +408,25 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
                                         : Colors.green.shade50,
                                     border: Border.all(color: Colors.red),
                                     borderRadius: BorderRadius.circular(8)),
-                                child: Text(
-                                  "Status: ${report['status']}",
-                                  style: TextStyle(
-                                    color: report['status'] == "Pending"
-                                        ? Colors.red
-                                        : Colors.green,
-                                  ),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Status: ${report['status']}",
+                                      style: TextStyle(
+                                        color: report['status'] == "Pending"
+                                            ? Colors.red
+                                            : Colors.green,
+                                      ),
+                                    ),
+                                    // Column(
+                                    //   crossAxisAlignment:
+                                    //       CrossAxisAlignment.start,
+                                    //   children: [
+                                    //     Text(
+                                    //         "${report['category']}, ${report['urgency']}"),
+                                    //   ],
+                                    // ),
+                                  ],
                                 ),
                               ),
                               Container(
