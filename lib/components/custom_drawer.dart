@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostel_management_app/screens/Dashboards/hostler_dashboard.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -47,7 +48,11 @@ class CustomDrawer extends StatelessWidget {
               child: ListView(
                 children: [
                   _buildAnimatedDrawerItem(Icons.dashboard, 'Dashboard', () {
-                    // Handle navigation
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DashboardScreen()),
+                    );
                   }),
                   _buildAnimatedDrawerItem(Icons.person, 'Profile', () {
                     // Handle navigation
@@ -104,36 +109,32 @@ class CustomDrawer extends StatelessWidget {
       IconData icon, String title, VoidCallback onTap) {
     return InkWell(
       onTap: onTap,
-      // splashColor: Colors.greenAccent.withOpacity(0.3),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8.0),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 0),
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 300),
-            padding: const EdgeInsets.symmetric(vertical: 10),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.green.withOpacity(0.4),
-                border: Border.all(color: Colors.green.shade900, width: 1.5)),
-            child: Row(
-              children: [
-                const SizedBox(width: 20),
-                Icon(icon, color: Colors.black, size: 28),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Text(
-                    title,
-                    style: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w500,
-                    ),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 300),
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              color: Colors.green.withOpacity(0.4),
+              border: Border.all(color: Colors.green.shade900, width: 1.5)),
+          child: Row(
+            children: [
+              const SizedBox(width: 20),
+              Icon(icon, color: Colors.black, size: 28),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Text(
+                  title,
+                  style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
-                const SizedBox(width: 20),
-              ],
-            ),
+              ),
+              const SizedBox(width: 20),
+            ],
           ),
         ),
       ),

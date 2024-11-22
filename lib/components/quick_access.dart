@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostel_management_app/screens/Hostler/room_management.dart';
 
 class QuickAccess extends StatefulWidget {
   const QuickAccess({super.key});
@@ -13,55 +14,76 @@ class _QuickAccessState extends State<QuickAccess> {
       "image": "assets/room.png",
       "label": "Room Management",
       "color": Colors.green.shade50,
-      "onTap": () {},
+      "onTap": (BuildContext context) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => RoomManagementPage()),
+        );
+      },
     },
     {
       "image": "assets/pay.png",
       "label": "Fee Payments",
       "color": Colors.green.shade100,
-      "onTap": () {},
+      "onTap": (BuildContext context) {
+        // Add navigation logic for Fee Payments here
+      },
     },
     {
       "image": "assets/doc.png",
       "label": "Documentation",
       "color": Colors.teal.shade50,
-      "onTap": () {},
+      "onTap": (BuildContext context) {
+        // Add navigation logic for Documentation here
+      },
     },
     {
       "image": "assets/comm.png",
       "label": "Student Groups",
       "color": Colors.teal.shade100,
-      "onTap": () {},
+      "onTap": (BuildContext context) {
+        // Add navigation logic for Student Groups here
+      },
     },
     {
       "image": "assets/security.png",
       "label": "Anti-Ragging",
       "color": Colors.green.shade200,
-      "onTap": () {},
+      "onTap": (BuildContext context) {
+        // Add navigation logic for Anti-Ragging here
+      },
     },
     {
       "image": "assets/outing.png",
       "label": "Outings",
       "color": Colors.lightGreen.shade100,
-      "onTap": () {},
+      "onTap": (BuildContext context) {
+        // Add navigation logic for Outings here
+      },
     },
     {
       "image": "assets/contact.png",
       "label": "Contact Info",
-      "color": Colors.amber.shade100, // Soft yellow
-      "onTap": () {},
+      "color": Colors.amber.shade100,
+      "onTap": (BuildContext context) {
+        // Add navigation logic for Contact Info here
+      },
     },
     {
       "image": "assets/help.png",
       "label": "Help Center",
       "color": Colors.blue.shade100,
-      "onTap": () {},
+      "onTap": (BuildContext context) {
+        // Add navigation logic for Help Center here
+      },
     },
     {
       "image": "assets/issue.png",
       "label": "Report an Issue",
-      "color": Colors.red.shade100, // Muted red for warnings
-      "onTap": () {},
+      "color": Colors.red.shade100,
+      "onTap": (BuildContext context) {
+        // Add navigation logic for Report an Issue here
+      },
     },
   ];
 
@@ -86,11 +108,16 @@ class _QuickAccessState extends State<QuickAccess> {
             children: buttonData.map((item) {
               final String? imagePath = item['image'] as String?;
               final Color color = item['color'] ?? Colors.grey;
+              final Function(BuildContext)? onTap =
+                  item['onTap'] as Function(BuildContext)?;
+
               return SizedBox(
                 width: 130,
                 height: 110,
                 child: InkWell(
-                  onTap: item['onTap'],
+                  onTap: onTap != null
+                      ? () => onTap(context)
+                      : null, // Safely invoke the onTap
                   borderRadius: BorderRadius.circular(12),
                   child: Card(
                     color: color,
