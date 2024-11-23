@@ -12,7 +12,7 @@ class FeesOverview extends StatelessWidget {
       width: 205,
       height: 185,
       child: Card(
-        color: Colors.teal.shade50, // Light green background
+        color: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 1,
         shadowColor: Colors.teal.withOpacity(0.4),
@@ -42,9 +42,8 @@ class FeesOverview extends StatelessWidget {
                       sections: feeData.entries.map((entry) {
                         return PieChartSectionData(
                           color: entry.key == "Paid"
-                              ? Colors.green.shade500 // Harmonized green
-                              : Colors.orange
-                                  .shade400, // Muted orange for "Pending"
+                              ? Colors.green.shade900 // Harmonized green
+                              : Colors.green.shade100,
                           value: entry.value,
                           title: '${entry.value.toStringAsFixed(0)}%',
                           radius: 25,
@@ -57,7 +56,7 @@ class FeesOverview extends StatelessWidget {
                       }).toList(),
                       sectionsSpace: 4,
                       centerSpaceRadius: 20,
-                      centerSpaceColor: Colors.teal.shade50,
+                      centerSpaceColor: Colors.white,
                       startDegreeOffset: -90,
                     ),
                   ),
@@ -74,9 +73,8 @@ class FeesOverview extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: entry.key == "Paid"
                                 ? Colors
-                                    .green.shade600 // Darker green for "Paid"
-                                : Colors.orange
-                                    .shade600, // Consistent orange for "Pending"
+                                    .green.shade900 // Darker green for "Paid"
+                                : Colors.green.shade100,
                             borderRadius: BorderRadius.circular(5),
                           ),
                         ),

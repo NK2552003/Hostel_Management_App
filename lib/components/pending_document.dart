@@ -13,7 +13,7 @@ class PendingDocuments extends StatelessWidget {
       width: 205,
       height: 185,
       child: Card(
-        color: Colors.teal.shade50, // Light green background
+        color: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         elevation: 1,
         shadowColor: Colors.green.withOpacity(0.5),
@@ -55,12 +55,22 @@ class PendingDocuments extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
+                                  Container(
+                                    width: 24,
+                                    height: 24,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(2),
+                                    ),
+                                    child: Icon(Icons.document_scanner),
+                                  ),
+                                  SizedBox(width: 10),
                                   Expanded(
                                     child: Text(
                                       pendingDocs[index],
                                       style: const TextStyle(
                                         fontSize: 16,
                                         color: Colors.black87,
+                                        fontWeight: FontWeight.w500,
                                       ),
                                       overflow: TextOverflow.ellipsis,
                                     ),

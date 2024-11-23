@@ -1,6 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hostel_management_app/components/fee_payments/fee_details.dart';
 import 'package:hostel_management_app/screens/Dashboards/hostler_dashboard.dart';
 import 'package:hostel_management_app/screens/Hostler/room_management.dart';
 
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        nextScreen: RoomManagementPage(),
+        nextScreen: HostelFeeOverview(),
         splashTransition: SplashTransition.fadeTransition,
       ),
     );
