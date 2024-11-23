@@ -40,7 +40,7 @@ class CommunityEvents extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.green.shade50,
+                color: const Color.fromARGB(255, 241, 248, 242),
                 // gradient: LinearGradient(
                 //   colors: [Colors.green.shade50, Colors.green.shade100],
                 //   begin: Alignment.topLeft,

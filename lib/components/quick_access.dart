@@ -13,7 +13,7 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/room.png",
       "label": "Room Management",
-      "color": Colors.green.shade50,
+      "color": const Color.fromARGB(255, 247, 250, 247),
       "onTap": (BuildContext context) {
         Navigator.pushReplacement(
           context,
@@ -24,7 +24,7 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/pay.png",
       "label": "Fee Payments",
-      "color": Colors.green.shade100,
+      "color": Colors.green.shade50,
       "onTap": (BuildContext context) {
         // Add navigation logic for Fee Payments here
       },
@@ -40,7 +40,7 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/comm.png",
       "label": "Student Groups",
-      "color": Colors.teal.shade100,
+      "color": const Color.fromARGB(255, 217, 229, 228),
       "onTap": (BuildContext context) {
         // Add navigation logic for Student Groups here
       },
@@ -48,7 +48,7 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/security.png",
       "label": "Anti-Ragging",
-      "color": Colors.green.shade200,
+      "color": const Color.fromARGB(255, 207, 232, 208),
       "onTap": (BuildContext context) {
         // Add navigation logic for Anti-Ragging here
       },
@@ -56,7 +56,7 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/outing.png",
       "label": "Outings",
-      "color": Colors.lightGreen.shade100,
+      "color": Colors.lightGreen.shade50,
       "onTap": (BuildContext context) {
         // Add navigation logic for Outings here
       },
@@ -64,7 +64,7 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/contact.png",
       "label": "Contact Info",
-      "color": Colors.amber.shade100,
+      "color": Colors.amber.shade50,
       "onTap": (BuildContext context) {
         // Add navigation logic for Contact Info here
       },
@@ -72,7 +72,7 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/help.png",
       "label": "Help Center",
-      "color": Colors.blue.shade100,
+      "color": Colors.blue.shade50,
       "onTap": (BuildContext context) {
         // Add navigation logic for Help Center here
       },
@@ -80,7 +80,7 @@ class _QuickAccessState extends State<QuickAccess> {
     {
       "image": "assets/issue.png",
       "label": "Report an Issue",
-      "color": Colors.red.shade100,
+      "color": Colors.red.shade50,
       "onTap": (BuildContext context) {
         // Add navigation logic for Report an Issue here
       },
