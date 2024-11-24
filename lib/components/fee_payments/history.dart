@@ -138,7 +138,7 @@ class _TransactionHistoryState extends State<TransactionHistory> {
                             });
                           },
                         ),
-                        SizedBox(width: 16),
+                        SizedBox(width: 10),
 
                         // Payment Method Filter
                         ElevatedButton(
@@ -154,7 +154,7 @@ class _TransactionHistoryState extends State<TransactionHistory> {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
-                        SizedBox(width: 16),
+                        SizedBox(width: 10),
 
                         // Time Filter
                         FilterButton(
@@ -287,7 +287,7 @@ class _TransactionHistoryState extends State<TransactionHistory> {
 class FilterButton extends StatelessWidget {
   final String label;
   final List<String> options;
-  final ValueChanged<String?> onChanged; // Allow nullable String
+  final ValueChanged<String> onChanged;
 
   const FilterButton({
     required this.label,
@@ -295,21 +295,129 @@ class FilterButton extends StatelessWidget {
     required this.onChanged,
   });
 
+  void _showOptions(BuildContext context) {
+    showModalBottomSheet(
+      backgroundColor: const Color.fromARGB(255, 240, 248, 241),
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      builder: (context) => Container(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Header
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Select an Option",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.green.shade900,
+                  ),
+                ),
+                IconButton(
+                  icon: Icon(Icons.close, color: Colors.green.shade900),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
+            // const Divider(),
+
+            // Options List with Icons
+            ...options.map(
+              (option) {
+                // Determine the color and icon based on the option
+                Color statusColor;
+                IconData statusIcon;
+
+                switch (option) {
+                  case "Completed":
+                    statusColor = Colors.green;
+                    statusIcon = Icons.check_circle;
+                    break;
+                  case "Failed":
+                    statusColor = Colors.red;
+                    statusIcon = Icons.cancel;
+                    break;
+                  case "Pending":
+                    statusColor = Colors.orange;
+                    statusIcon = Icons.hourglass_top;
+                    break;
+                  case "This Month":
+                  case "This Year":
+                  case "Previous Year":
+                    statusColor = Colors.green.shade700;
+                    statusIcon = Icons.calendar_month_rounded;
+                    break;
+                  default:
+                    statusColor = Colors.grey;
+                    statusIcon = Icons.info;
+                }
+
+                return ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: statusColor.withOpacity(0.2),
+                    child: Icon(
+                      statusIcon,
+                      color: statusColor,
+                      size: 20,
+                    ),
+                  ),
+                  title: Text(
+                    option,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.green.shade800,
+                    ),
+                  ),
+                  onTap: () {
+                    onChanged(option);
+                    Navigator.pop(context);
+                  },
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  tileColor: Colors.white,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                );
+              },
+            ).toList(),
+            const SizedBox(height: 16),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    return DropdownButton<String>(
-      value: label,
-      items: options
-          .map((option) => DropdownMenuItem<String>(
-                value: option,
-                child: Text(option),
-              ))
-          .toList(),
-      onChanged: onChanged, // Works with nullable String
-      style: TextStyle(color: Colors.green.shade900),
-      dropdownColor: Colors.white,
-      borderRadius: BorderRadius.circular(12),
-      elevation: 3,
+    return ElevatedButton(
+      onPressed: () => _showOptions(context),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: const Color.fromARGB(255, 247, 251, 247),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+            side: BorderSide(color: Colors.green.shade900)),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            label,
+            style: const TextStyle(color: Colors.black),
+          ),
+          Icon(
+            Icons.arrow_drop_down,
+            color: Colors.black,
+          ),
+        ],
+      ),
     );
   }
 }
