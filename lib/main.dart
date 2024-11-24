@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        nextScreen: HostelFeeOverview(),
+        nextScreen: DashboardScreen(),
         splashTransition: SplashTransition.fadeTransition,
       ),
     );

@@ -4,6 +4,7 @@ import 'package:hostel_management_app/components/custom_appbar.dart';
 import 'package:hostel_management_app/components/custom_drawer.dart';
 import 'package:hostel_management_app/components/fee_payments/history.dart';
 import 'package:hostel_management_app/components/fee_payments/paid_due.dart';
+import 'package:hostel_management_app/components/fee_payments/payment_method_sheet.dart';
 
 class HostelFeeOverview extends StatefulWidget {
   @override
@@ -135,6 +136,46 @@ class _HostelFeeOverviewState extends State<HostelFeeOverview>
                   ),
                   // PaidDue Section
                   PaidDue(),
+                  Padding(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        showModalBottomSheet(
+                          context: context,
+                          isScrollControlled:
+                              true, // For making it look like a modal dialog
+                          shape: RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.vertical(top: Radius.circular(16)),
+                          ),
+                          builder: (context) => PaymentMethodSheet(),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        elevation: 2,
+                        backgroundColor:
+                            Colors.green.shade100, // Set background color
+                        foregroundColor: Colors.black,
+                        side: BorderSide(
+                            color: Colors.green.shade900), // Set text color
+                        minimumSize: Size(double.infinity,
+                            50), // Expand the button to full width with a fixed height
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                              12), // Optional: rounded corners for elegance
+                        ),
+                      ),
+                      child: Text(
+                        "Pay Dues",
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight
+                                .bold), // Adjust text style for elegance
+                      ),
+                    ),
+                  ),
+
                   // TransactionHistory Section
                   Expanded(child: TransactionHistory()),
                 ],
