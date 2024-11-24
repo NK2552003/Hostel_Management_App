@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostel_management_app/components/fee_payments/payment_details.dart';
 
 class TransactionHistory extends StatefulWidget {
   @override
@@ -16,29 +17,58 @@ class _TransactionHistoryState extends State<TransactionHistory> {
       "date": "23 Nov 2023",
       "amount": "48,750",
       "status": "Completed",
+      "time": "4:45 PM",
+      "bankName": "Punjab National Bank",
+      "upiId": "himalyanfoundation@okhdfcbank",
+      "from": "SATISH KUMAR SO RAMESHWAR (Punjab National Bank)",
+      "fromUpiId": "nk2552003-1@okhdfcbank",
+      "transactionId": "3422624646",
+      "UTR": "VBNM67dfwe4reU"
     },
     {
       "to": "Himalyan Foundation",
       "date": "12 Jan 2024",
       "amount": "5,000",
       "status": "Failed",
+      "time": "2:45 PM",
+      "bankName": "Punjab National Bank",
+      "upiId": "himalyanfoundation@okhdfcbank",
+      "from": "SATISH KUMAR SO RAMESHWAR (Punjab National Bank)",
+      "fromUpiId": "nk2552003-1@okhdfcbank",
+      "transactionId": "3636624646",
+      "UTR": "CREF67dfgb4ghR"
     },
     {
       "to": "Himalyan Foundation",
       "date": "15 Jan 2024",
       "amount": "5,000",
       "status": "Completed",
+      "time": "8:45 PM",
+      "bankName": "Punjab National Bank",
+      "upiId": "himalyanfoundation@okhdfcbank",
+      "from": "SATISH KUMAR SO RAMESHWAR (Punjab National Bank)",
+      "fromUpiId": "nk2552003-1@okhdfcbank",
+      "transactionId": "7422954646",
+      "UTR": "DHEF45drgb2ghR"
     },
     {
       "to": "Himalyan Foundation",
       "date": "22 Nov 2024",
       "amount": "48,750",
       "status": "Pending",
+      "time": "4:45 PM",
+      "bankName": "Punjab National Bank",
+      "upiId": "himalyanfoundation@okhdfcbank",
+      "from": "SATISH KUMAR SO RAMESHWAR (Punjab National Bank)",
+      "fromUpiId": "nk2552003-1@okhdfcbank",
+      "transactionId": "9213424646",
+      "UTR": "QWER67lkgb4jkY"
     },
   ];
 
   void _showAccountDetails() {
     showModalBottomSheet(
+      backgroundColor: Colors.green.shade50,
       context: context,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
@@ -55,7 +85,13 @@ class _TransactionHistoryState extends State<TransactionHistory> {
             ),
             Divider(),
             ListTile(
-              title: Text("Punjab National Bank"),
+              title: Row(
+                children: [
+                  Icon(Icons.account_balance_rounded),
+                  SizedBox(width: 10),
+                  Text("Punjab National Bank"),
+                ],
+              ),
               onTap: () {
                 setState(() {
                   selectedPaymentMethod = "PNB";
@@ -64,7 +100,13 @@ class _TransactionHistoryState extends State<TransactionHistory> {
               },
             ),
             ListTile(
-              title: Text("UPI"),
+              title: Row(
+                children: [
+                  Icon(Icons.payment),
+                  SizedBox(width: 10),
+                  Text("UPI"),
+                ],
+              ),
               onTap: () {
                 setState(() {
                   selectedPaymentMethod = "UPI";
@@ -263,13 +305,24 @@ class _TransactionHistoryState extends State<TransactionHistory> {
                           ),
                           subtitle: Text(transaction["date"]),
                           trailing: Text(
-                            transaction["amount"],
+                            "₹${transaction["amount"]}",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                               color: Colors.green.shade900,
                             ),
                           ),
+                          onTap: () {
+                            // Navigate to the PaymentDetails screen
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => PaymentDetails(
+                                  transaction: transaction,
+                                ),
+                              ),
+                            );
+                          },
                         ),
                       );
                     },
