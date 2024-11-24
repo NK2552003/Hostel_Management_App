@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostel_management_app/components/fee_payments/fee_details.dart';
 import 'package:hostel_management_app/screens/Hostler/room_management.dart';
 
 class QuickAccess extends StatefulWidget {
@@ -26,7 +27,10 @@ class _QuickAccessState extends State<QuickAccess> {
       "label": "Fee Payments",
       "color": Colors.green.shade50,
       "onTap": (BuildContext context) {
-        // Add navigation logic for Fee Payments here
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => HostelFeeOverview()),
+        );
       },
     },
     {

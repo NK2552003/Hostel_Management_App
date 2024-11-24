@@ -316,7 +316,7 @@ class _MaintenanceReportCardState extends State<MaintenanceReportCard> {
         decoration: BoxDecoration(
           border: Border.all(color: Colors.green.shade900),
           borderRadius: BorderRadius.circular(12),
-          color: Colors.teal.shade50,
+          color: const Color.fromARGB(255, 233, 245, 244),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

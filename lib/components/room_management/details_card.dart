@@ -6,7 +6,7 @@ class RoomDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.teal.shade50,
+      color: const Color.fromARGB(255, 233, 245, 244),
       elevation: 2,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),

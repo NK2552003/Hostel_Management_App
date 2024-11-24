@@ -21,7 +21,10 @@ class PaidDue extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [Colors.green.shade50, Colors.green.shade100],
+                    colors: [
+                      const Color.fromARGB(255, 241, 249, 242),
+                      const Color.fromARGB(255, 206, 231, 207)
+                    ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
@@ -80,7 +83,7 @@ class PaidDue extends StatelessWidget {
                       SizedBox(height: 8),
                       // Additional Info
                       Text(
-                        'Last Pay: Nov 15, 2024',
+                        'Last Payed: Nov 15, 2024',
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.green.shade700,
@@ -92,7 +95,7 @@ class PaidDue extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(width: 16), // Space between the cards
+          SizedBox(width: 8), // Space between the cards
           // Due Card
           Expanded(
             child: Card(
@@ -104,7 +107,10 @@ class PaidDue extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [Colors.red.shade50, Colors.red.shade100],
+                    colors: [
+                      const Color.fromARGB(255, 252, 237, 239),
+                      const Color.fromARGB(255, 254, 219, 223)
+                    ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
