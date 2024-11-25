@@ -107,6 +107,17 @@
                 android:value="" />
         </service>
 
+        <provider
+            android:name="com.crazecoder.openfile.FileProvider"
+            android:authorities="com.example.hostel_management_app.fileProvider.com.crazecoder.openfile"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:requestLegacyExternalStorage="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
         <uses-library
             android:name="androidx.window.extensions"
             android:required="false" />
@@ -118,6 +129,9 @@
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.hostel_management_app.androidx-startup"
             android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
             <meta-data
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.hostel_management_app-mergeDebugResources-28:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/nitishkumar/.gradle/caches/8.9/transforms/6c1de22cd1795c6e840e0f1beb45aebd/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

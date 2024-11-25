@@ -44,7 +44,6 @@ dependencies:
   auto_animated: ^3.2.0
   file_picker:
   open_file:
-  flutter_file_view:
 
 dev_dependencies:
   flutter_test:

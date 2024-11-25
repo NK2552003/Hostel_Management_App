@@ -4,8 +4,12 @@ INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Manageme
 INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/android/app/src/debug/AndroidManifest.xml
 MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-32:19
 MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-32:19
+MERGED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-20:19
+MERGED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-20:19
 MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
@@ -31,10 +35,16 @@ INJECTED from /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Manageme
 MERGED from [:file_picker] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-34:12
 MERGED from [:flutter_plugin_android_lifecycle] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/252de95678c1340475a5d345274230dd/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/6c1de22cd1795c6e840e0f1beb45aebd/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/3d8a751b52c207999b947b3a82e34f2c/transformed/fragment-1.7.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.9.2] /Users/nitishkumar/.gradle/caches/8.9/transforms/b622c961a4329e7921d03e26baca63f9/transformed/jetified-activity-1.9.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0eab0f3b719e2326b07fe52828ae50b/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:17:1-21:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/daf48bcc125eb564b8da38cef0b035b2/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/39122e1c7524a0a9c2144a11cf0be32a/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/d0da6be5f14f16e41c085cf681930d9d/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0e0d604ea92f65e5468e09970024ccf/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c4f5bbd0cb71cfa24d8fb4d881f3b38/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
@@ -44,6 +54,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/nitishkumar/.g
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/481c1cacd48bed126ba602b110f33178/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/0839a1890dc0ac3f40342da9333099ba/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/a983c308650821304a21d7ffa69f49d6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ee0d0c43b000c07d27982dbd9ad6635e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/748c8cfd3fa79a00271133a6c7419665/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c1ad9d790cc7278ce6d38e073c70bbc6/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
@@ -54,6 +66,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/
 MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/a118eb5ce69f33e9af889ef12928d67f/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ec0446cc6bc92d9bcd99bfe0a331d31a/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ed7e6c49deae7b19fd8e3465a2656e21/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/343e600ea4cb5e609317b55a5acef0a8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1269c1fa696d5725faa636c9fc55f8e1/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/f1c5e152eb5311187d29732726d7a153/transformed/jetified-core-1.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1f496d2d99c7e1c5afce3a1d82f61743/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
@@ -107,6 +120,12 @@ MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_manageme
 MERGED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
+MERGED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/252de95678c1340475a5d345274230dd/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/252de95678c1340475a5d345274230dd/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/6c1de22cd1795c6e840e0f1beb45aebd/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/6c1de22cd1795c6e840e0f1beb45aebd/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/3d8a751b52c207999b947b3a82e34f2c/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/3d8a751b52c207999b947b3a82e34f2c/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity:1.9.2] /Users/nitishkumar/.gradle/caches/8.9/transforms/b622c961a4329e7921d03e26baca63f9/transformed/jetified-activity-1.9.2/AndroidManifest.xml:20:5-44
@@ -115,6 +134,12 @@ MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9
 MERGED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0eab0f3b719e2326b07fe52828ae50b/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
 MERGED from [androidx.window:window-java:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0eab0f3b719e2326b07fe52828ae50b/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/daf48bcc125eb564b8da38cef0b035b2/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/daf48bcc125eb564b8da38cef0b035b2/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/39122e1c7524a0a9c2144a11cf0be32a/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/39122e1c7524a0a9c2144a11cf0be32a/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/d0da6be5f14f16e41c085cf681930d9d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/d0da6be5f14f16e41c085cf681930d9d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/c0e0d604ea92f65e5468e09970024ccf/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
@@ -133,6 +158,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nit
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/481c1cacd48bed126ba602b110f33178/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/0839a1890dc0ac3f40342da9333099ba/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/0839a1890dc0ac3f40342da9333099ba/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/a983c308650821304a21d7ffa69f49d6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/a983c308650821304a21d7ffa69f49d6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ee0d0c43b000c07d27982dbd9ad6635e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ee0d0c43b000c07d27982dbd9ad6635e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/748c8cfd3fa79a00271133a6c7419665/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/748c8cfd3fa79a00271133a6c7419665/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.13.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/f94475d0ee9d4fd73fbdbfc57d660a71/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
@@ -153,6 +182,8 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradl
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ec0446cc6bc92d9bcd99bfe0a331d31a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ed7e6c49deae7b19fd8e3465a2656e21/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ed7e6c49deae7b19fd8e3465a2656e21/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/343e600ea4cb5e609317b55a5acef0a8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/343e600ea4cb5e609317b55a5acef0a8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1269c1fa696d5725faa636c9fc55f8e1/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/1269c1fa696d5725faa636c9fc55f8e1/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/f1c5e152eb5311187d29732726d7a153/transformed/jetified-core-1.0.0/AndroidManifest.xml:5:5-44
@@ -207,6 +238,20 @@ ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_managemen
 		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-33
 	android:name
 		ADDED from [:image_picker_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-63
+provider#com.crazecoder.openfile.FileProvider
+ADDED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:9-19:20
+	android:requestLegacyExternalStorage
+		ADDED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-56
+	android:grantUriPermissions
+		ADDED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-47
+	android:authorities
+		ADDED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-88
+	android:exported
+		ADDED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+	tools:replace
+		ADDED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-48
+	android:name
+		ADDED from [:open_file_android] /Users/nitishkumar/Downloads/hostel_management_app/Hostel_Management_App/build/open_file_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-64
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
 	android:required
@@ -220,19 +265,27 @@ ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/
 	android:name
 		ADDED from [androidx.window:window:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/2c0ba2094c9347b44169ea5648c68564/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/e98ce98b480c4cb5d17318d2ce2732d0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitishkumar/.gradle/caches/8.9/transforms/ad5313afe563a69329e87913970fc10c/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/7bc4b3a5d031406a601f9be69b07838a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/nitishkumar/.gradle/caches/8.9/transforms/ac9c146471aef157a79b6408a3545c6e/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
 	android:value
