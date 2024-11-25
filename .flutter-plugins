@@ -1,7 +1,9 @@
 # This is a generated file; do not edit or check into version control.
+file_picker=/Users/nitishkumar/.pub-cache/hosted/pub.dev/file_picker-8.1.4/
 file_selector_linux=/Users/nitishkumar/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.3+1/
 file_selector_macos=/Users/nitishkumar/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+2/
 file_selector_windows=/Users/nitishkumar/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+3/
+flutter_file_view=/Users/nitishkumar/.pub-cache/hosted/pub.dev/flutter_file_view-2.2.1/
 flutter_plugin_android_lifecycle=/Users/nitishkumar/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.23/
 image_picker=/Users/nitishkumar/.pub-cache/hosted/pub.dev/image_picker-1.1.2/
 image_picker_android=/Users/nitishkumar/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+17/
@@ -10,3 +12,10 @@ image_picker_ios=/Users/nitishkumar/.pub-cache/hosted/pub.dev/image_picker_ios-0
 image_picker_linux=/Users/nitishkumar/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+1/
 image_picker_macos=/Users/nitishkumar/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+1/
 image_picker_windows=/Users/nitishkumar/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1/
+open_file=/Users/nitishkumar/.pub-cache/hosted/pub.dev/open_file-3.5.10/
+open_file_android=/Users/nitishkumar/.pub-cache/hosted/pub.dev/open_file_android-1.0.6/
+open_file_ios=/Users/nitishkumar/.pub-cache/hosted/pub.dev/open_file_ios-1.0.3/
+open_file_linux=/Users/nitishkumar/.pub-cache/hosted/pub.dev/open_file_linux-0.0.5/
+open_file_mac=/Users/nitishkumar/.pub-cache/hosted/pub.dev/open_file_mac-1.0.3/
+open_file_web=/Users/nitishkumar/.pub-cache/hosted/pub.dev/open_file_web-0.0.4/
+open_file_windows=/Users/nitishkumar/.pub-cache/hosted/pub.dev/open_file_windows-0.0.3/

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hostel_management_app/components/fee_payments/fee_details.dart';
+import 'package:hostel_management_app/screens/Hostler/documentation.dart';
 import 'package:hostel_management_app/screens/Hostler/room_management.dart';
 
 class QuickAccess extends StatefulWidget {
@@ -39,6 +40,10 @@ class _QuickAccessState extends State<QuickAccess> {
       "color": Colors.teal.shade50,
       "onTap": (BuildContext context) {
         // Add navigation logic for Documentation here
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => Documentation()),
+        );
       },
     },
     {
